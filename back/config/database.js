@@ -3,10 +3,10 @@ const { Sequelize } = require("sequelize");
 
 const sequelize = new Sequelize(
   process.env.DB_NAME || "radiotherapieDB",
-  process.env.DB_USER || "postgres",
+  process.env.DB_USER || "root",
   process.env.DB_PASSWORD || "root",
   {
-    host: process.env.DB_HOST || "localhost",
+    host: process.env.DB_HOST || "51.255.171.78",
 
     dialect: "postgres",
     logging: false,

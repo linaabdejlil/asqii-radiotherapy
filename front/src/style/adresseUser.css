@@ -1,0 +1,177 @@
+.boxAdresseUser {
+    height: 700px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  
+  
+  .boxAdresseUser .groupAdresseUser {
+    height: 650px;
+    left: 0;
+    top: 0;
+    width: 940px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+  }
+  .boxAdresseUser .divAdresseUser {
+    height: 51px;
+    left: 120px;
+    position: absolute;
+    top: 560px;
+    width: 800px;
+  }
+  
+  .boxAdresseUser .champ-textAdresseUser {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 400px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+  }
+  
+  .boxAdresseUser .text-wrapperAdresseUser {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .boxAdresseUser .div-wrapperAdresseUser {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: -10px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+  }
+  .boxAdresseUser .AdresseUser-wrapperAdresseUser {
+    height: 51px;
+    left: 280px;
+    position: absolute;
+    top: 27px;
+    width: 545px;
+  }
+  
+  .boxAdresseUser .AdresseUser {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 350px;
+  }
+  .boxAdresseUser .mapAdresse{
+    margin-top: 70px;
+    margin-left: 20px;
+
+  }
+  .boxAdresseUser .addressDetails{
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 800%;  /* Makes the width responsive to the parent container's width */
+    max-width: 2000px;  /* Ensures it does not grow beyond 1200px */
+    padding: 10px;
+   margin-top: 20px;
+   margin-left: 20px;
+  }
+  .boxAdresseUser .Localisation{
+   color: #233368;
+   font-family: "Montserrat-SemiBold" , Helvetica;
+   font-size: 15px;
+   font-weight: 600;
+   letter-spacing: 0;
+   line-height: normal;
+   white-space: nowrap;
+  }
+  .boxAdresseUser .loc {
+    display: flex; /* Aligns children (locc and addressDetails) in a row */
+    align-items: center; /* Aligns children vertically in the middle */
+    margin-left: 10px;
+  }
+  .boxAdresseUser .locc{
+    margin-top: 15px;
+  }
+#map { position: absolute;  }
+
+    .geocoder {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        left: 50%;
+        margin-left: 25%;
+        top: 10px;
+    }
+    .mapboxgl-ctrl-geocoder {
+        min-width: 100%;
+    }
+  
+    .mapContainer {
+        height: 400px; /* Hauteur spécifiée */
+        width: 900px; /* Largeur spécifiée */
+      }
+      .searchContainer {
+        position: relative;
+        padding-top: 10px; /* Adjust padding to suit */
+      }
+      
+      .mapboxgl-ctrl-geocoder {
+        width: 100%; /* Full width of the container */
+        box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+      }
+      
+      .mapboxgl-ctrl-geocoder--input {
+        height: 40px; /* Adjust the height of the input field */
+        line-height: 28px; /* Line height for the text inside the input */
+        padding-left: 2.5rem; /* Padding to make room for the icon inside the input */
+        border-radius: 15px; /* Rounded corners for the input field */
+        background-color: #dcebfd; /* Light blue background */
+        color: #0d0c22; /* Dark text color for contrast */
+        border: 2px solid transparent; /* Removes the default border */
+      }
+      
+      .mapboxgl-ctrl-geocoder--input::placeholder {
+        color: #9e9ea7; /* Light grey color for the placeholder text */
+      }
+      
+      .mapboxgl-ctrl-geocoder--input:focus,
+      .mapboxgl-ctrl-geocoder--input:hover {
+        border-color: rgba(247, 127, 0, 0.4); /* Highlight border on focus/hover */
+        background-color: #fff; /* White background on focus/hover */
+      }
+      
+      .mapboxgl-ctrl-geocoder--icon {
+        fill: #9e9ea7; /* Grey color for the search icon */
+        left: 1rem; /* Position icon inside the input */
+      }
+      

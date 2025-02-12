@@ -1,0 +1,514 @@
+.boxValidation {
+    height: 634px;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 691px;
+  }
+  
+  .boxValidation .groupValidation {
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: 790px;
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  .boxValidation .Validation-wrapper {
+    height: 40px;
+    left: 30px;
+    position: absolute;
+    top: 30px;
+    width: 400px;
+  }
+  
+  .boxValidation .Validation {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 250px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    width: 400px;
+    margin-top: 0px;
+  }
+  .boxValidation .med{
+    margin-top: -37px;
+    margin-left: 60px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .patient{
+    margin-top: -20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .patientNom{
+    margin-top: -15px;
+    margin-left: 130px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .loc{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .locinput{
+    margin-top: 19px;
+    margin-left: 150px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .dateValidation{
+    margin-top: 40px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .inputdateValidation{
+    margin-top: -25px;
+    margin-left: 220px;
+  
+    
+  }
+  .boxValidation .inputdateValidation2{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+  
+    
+  }
+  .boxValidation .rqValidation{
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .inputrqValidation{
+    margin-top: 10px;
+    margin-left: 90px;
+  
+  
+  }
+  .boxValidation .inputrqValidation2{
+    background-color: #dcebfd;
+    border-color: #0069d900;
+    border-radius: 12px;
+    height: 100px;
+    position: absolute;
+    width: 510px;
+    padding: 10px;
+   
+  
+  }
+  
+  .boxValidation .rqPrescription{
+    margin-top: 120px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .rqImportation{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .rqScanner{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .rqContourage{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .rqDosimetrie{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .inputrqPrescription{
+    margin-top: 10px;
+    margin-left: 110px;
+  
+  
+  }
+  .boxValidation .inputrqPrescription2{
+    background-color: #dcebfd00;
+    border-color: #0069d900;
+    border-radius: 12px;
+    height: 70px;
+    position: absolute;
+    width: 510px;
+    padding: 10px;
+    color: #ff6a00;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -35px;
+    margin-left: 130px;
+  }
+  .boxValidation .inputrqScanner2{
+    background-color: #dcebfd00;
+    border-color: #0069d900;
+    border-radius: 12px;
+    height: 70px;
+    position: absolute;
+    width: 510px;
+    padding: 10px;
+    color: #ff6a00;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -35px;
+    margin-left: 200px;
+  }
+  
+  .boxValidation  .divValidation {
+    height: 20px;
+    position: absolute;
+    width: 600px;
+    top:735px;
+    left: 75px;
+  }
+  
+  .boxValidation .champ-textValidation {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    left: 300px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+  }
+  
+  .boxValidation .text-wrapperValidation {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .boxValidation .div-wrapperValidation {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    left: 0;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+  }
+  .boxValidation .medecin{
+    margin-left: 180px;
+  }
+  .boxValidation .medecin2{
+    margin-left: 30px;
+  }
+  .boxValidation .medecinp{
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .boxValidation .realise{
+    margin-top: -24px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  
+  .exit-button {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    top :30px;
+    left:620px
+  }
+  
+  .line {
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    top: 50%;
+    left: 3px;
+    transform-origin: center;
+  }
+  
+  .line:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .line:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  
+  .boxValidation .container {
+    display: flex;
+    flex-wrap: wrap; /* Pour que les éléments passent à la ligne si nécessaire */
+  }
+  .boxValidation .loc{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .locinput{
+    margin-top: 19px;
+    margin-left: 125px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .indication{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .indicationinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .chimio{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .chimioinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .nb{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .nbinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .doseT{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .doseTinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .doseS{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .doseSinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .technique{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxValidation .techniqueinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .boxValidation .lign{
+    margin-top: -30px;
+    margin-left: 50px;
+  }
+  .avatar {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 70px;
+  }
+  
+  .avatar:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+  

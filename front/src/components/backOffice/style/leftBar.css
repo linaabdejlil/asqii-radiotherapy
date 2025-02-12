@@ -1,0 +1,192 @@
+aside {
+    color: #fff;
+    width: 250px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    height: 100vh;
+    background-image: linear-gradient(30deg , #0c035b, #021198);
+    border-top-right-radius: 80px;
+    position: fixed; /* Ajout : positionnement fixe pour le rendre fixe à gauche */
+    left: 0; /* Ajout : position à gauche de la page */
+    top: 0; /* Ajout : position en haut de la page */
+    margin-top: 50px; /* Ajout : marge en haut pour créer de l'espace */
+}
+  
+  aside a {
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    padding: 12px;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  
+  aside a:hover {
+    color: #0c035b;
+    background: #fff;
+    outline: none;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+
+
+  aside a i {
+    margin-right: 5px;
+  }
+  
+  aside a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #fff;
+  }
+  
+  aside a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #fff;
+  }
+  .leftBar .flex {
+    margin-bottom: 15px; /* Add spacing between each link */
+  }
+  aside p {
+    margin: 0;
+    padding: 40px ;
+    margin-bottom: 20px; /* Add spacing after the "Menu" text */
+
+  }
+  
+  body {
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .social {
+    height: 0;  
+  }
+  
+  .social i:before {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0c035b;
+    padding: 10px;
+    border-radius: 50%;
+    top:5px;
+    right:5px;
+  }
+.selected {
+  color: #0c035b;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+
+.selected::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+.info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: #D7F1FD;
+  border-radius: 8px;
+  border: 1px solid #509AF8;
+  box-shadow: 0px 0px 5px -3px #111;
+  bottom: 20px; /* Position en bas */
+  right: 20px; /* Position à droite */
+}
+
+.info__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.info__icon path {
+  fill: #509AF8;
+}
+
+.info__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0C2A75;
+}
+
+.info__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.info__close path {
+  fill: #0C2A75;
+}
+
+.notification-textBack {
+  background: linear-gradient(to right, #FF914D, #FFE03D); /* Apply gradient */
+  -webkit-background-clip: text; /* Clip background to the text (WebKit) */
+  background-clip: text; /* Clip background to the text (Standard) */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent (WebKit) */
+  color: transparent; /* Make the text color transparent (Standard) */
+  margin-right: 10px; /* Keeps space between text and icon */
+}
+
+
+.logout-buttonBack {
+  margin-top: 250px;
+  margin-left: 30px;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Centers items vertically */
+  justify-content: flex-start; /* Aligns items to the start of the div */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}

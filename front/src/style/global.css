@@ -1,0 +1,150 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .headerG{
+    padding: 0 ;
+    background-color: rgb(0, 0, 92);
+    font-size: x-large;
+    font-style: italic;
+    color: aliceblue;
+
+  }
+  .menuG{
+    background-color: rgb(0, 0, 92);
+
+  }
+  .navMot{
+    font-style: italic;
+    font-size: x-large;
+  }
+  .rounded-circle{
+    height: 40px;
+    width: 40px;
+  }
+  .gg-align-bottom {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    height: 24px; /* Augmentation de la hauteur */
+    width: 24px; /* Augmentation de la largeur */
+    border-bottom: 4px solid; /* Augmentation de l'épaisseur de la ligne du bas */
+    transform: scale(var(--ggs,1));
+}
+
+.gg-align-bottom::after,
+.gg-align-bottom::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px; /* Augmentation de la largeur du pseudo-élément */
+    background: currentColor;
+    bottom: 4px; /* Ajustement de la position verticale */
+}
+
+.gg-align-bottom::before {
+    left: 3px; /* Ajustement de la position horizontale */
+    height: 24px; /* Augmentation de la hauteur */
+}
+
+.gg-align-bottom::after {
+    height: 12px; /* Augmentation de la hauteur */
+    right: 3px; /* Ajustement de la position horizontale */
+    opacity: 0.5; /* Ajustement de l'opacité */
+}
+
+
+.drop-item:hover {
+  background-color: #ffb24ee0; /* Changer la couleur de fond lors du survol */
+}
+.arrow-button {
+  position: relative; /* Position relative pour le conteneur */
+  cursor: pointer;
+  width: 60px; /* Ajustement pour une plus grande flèche */
+  height: 60px; /* Ajustement pour une plus grande flèche */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; /* Fond transparent */
+  border: none; /* Aucune bordure pour le bouton */
+  margin-top: -30px;
+}
+
+.arrow {
+  position: absolute; /* Position absolue pour superposer les flèches */
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent; /* Augmentation pour une flèche plus large */
+  border-right: 15px solid transparent; /* Augmentation pour une flèche plus large */
+  transition: all 0.3s ease; /* Transition pour animation visuelle */
+}
+
+.arrow.down {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid #ffffffb7; /* Flèche vers le bas plus grande */
+}
+
+.arrow.up {
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid #ffffffb7; /* Flèche vers le haut plus grande */
+}
+#checkbox2 {
+  display: none;
+}
+
+.toggle2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 6px;
+  background-color: #0083DA;
+  border-radius: 6px;
+}
+
+#bar5 {
+  transition-duration: .8s;
+}
+
+#bar4,#bar6 {
+  width: 80%;
+}
+
+#checkbox2:checked + .toggle2 .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox2:checked + .toggle2 #bar5 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox2:checked + .toggle2 #bar4 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox2:checked + .toggle2 #bar6 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox2:checked + .toggle2 {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}

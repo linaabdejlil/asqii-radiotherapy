@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: ./front
+    ports:
+      - "3050:80"
+    networks:
+      - mynetwork
+
+  backend:
+    build:
+      context: ./back
+    ports:
+      - "4001:4001"
+    depends_on:
+      - db
+    command: ./scripts/wait-for-it.sh db:3306 -- npm start
+    networks:
+      - mynetwork
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: "radiotherapieDB"
+      MYSQL_ROOT_PASSWORD: "root"
+    networks:
+      - mynetwork
+    volumes:
+      - my-datavolume:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: "root"
+    ports:
+      - "8085:80"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  my-datavolume:

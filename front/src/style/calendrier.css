@@ -1,0 +1,457 @@
+.boxCalendrier {
+    height: 700px;
+    width: 1400px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  
+  
+  .boxCalendrier .groupCalendrier {
+    height: 888px;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .boxCalendrier .overlapCalendrier {
+    background-size: 100% 100%;
+    height: 888px;
+    position: relative;
+    width: 1261px;
+  }
+  
+  .boxCalendrier .nouveau-Calendrier-wrapperCalendrier {
+    height: 51px;
+    left: 530px;
+    position: absolute;
+    top: 27px;
+    width: 545px;
+  }
+  
+  .boxCalendrier .nouveau-Calendrier {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 543px;
+  }
+  .boxCalendrier .group-2Calendrier {
+    height: 50px;
+    left: 100px;
+    position: absolute;
+    top: 200px;
+    width: 480px;
+  }
+  .boxCalendrier .group-DDCalendrier {
+    height: 50px;
+    left: 600px;
+    position: absolute;
+    top: 200px;
+    width: 480px;
+  }
+  
+  .boxCalendrier .group-wrapperCalendrier {
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 70px;
+  }
+  
+  .boxCalendrier .group-3Calendrier {
+    height: 20px;
+    position: relative;
+    width: 70px;
+  }
+  
+  
+  .boxCalendrier .text-wrapper-2Calendrier {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -10px;
+    white-space: nowrap;
+    width: 70px;
+  }
+  .boxCalendrier .text-wrapper-2CalendrierNB {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -10px;
+    white-space: nowrap;
+    width: 70px;
+  }
+  
+  .boxCalendrier .rectangleCalendrier {
+    background-color: #dcebfd;
+    border-color: #2662ee00;
+  
+    border-radius: 12px;
+    height: 40px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+  }
+  .boxCalendrier .rectangleCalendrierNB {
+    background-color: #dcebfd;
+    border-color: #2662ee00;
+  
+    border-radius: 12px;
+    height: 40px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 180px;
+  }
+  .boxCalendrier .validerTraitement{
+    height: 40px;
+    left: 0px;
+    position: absolute;
+    top: 200px;
+    width: 100px;  }
+  
+  .boxCalendrier .champ-textCalendrier {
+    align-items: center;
+    background-color: #2663ee;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 1000px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .boxCalendrier .text-wrapperCalendrier {
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+
+  
+  
+  .boxCalendrier .cal {
+    position: relative;
+    top: 50px;
+    left: 100px
+  }
+  .rbc-month-view{
+    flex-basis: 500px !important;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+  }
+  
+  .rbc-toolbar-label {
+    font-weight: bold;
+    font-size: 22px;
+    color: #233368;
+  }
+  
+  .rbc-date-cell {
+    color: #233368;
+  }
+  
+  
+  .rbc-today {
+    background-color: rgb(196, 226, 250) !important;
+  }
+  .rbc-header{
+    background-color: #233368;
+    height: 30px;
+  }
+  
+  
+  
+  @media (max-width: 480px) {
+    .rbc-toolbar {
+      display: block !important;
+    }
+  }
+
+  .boxCalendrier .med{
+    margin-top: -37px;
+    margin-left: 60px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .patient{
+    margin-top: -20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .patientNom{
+    margin-top: -22px;
+    margin-left: 170px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .container {
+    display: flex;
+    flex-wrap: wrap; /* Pour que les éléments passent à la ligne si nécessaire */
+  }
+  .boxCalendrier .loc{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .locinput{
+    margin-top: 19px;
+    margin-left: 180px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .indication{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .indicationinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .chimio{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .chimioinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .nb{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .nbinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .doseT{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .doseTinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .doseS{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .doseSinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .technique{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxCalendrier .techniqueinput{
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .boxCalendrier .lign{
+    margin-top: -30px;
+    margin-left: 50px;
+  }
+  .avatar {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 70px;
+  }
+  
+  .avatar:hover .overlay {
+    opacity: 1;
+  }
+  .boxCalendrier .medecin{
+    margin-left: 180px;
+  }
+  .boxCalendrier .medecin2{
+    margin-left: 30px;
+  }
+  .boxCalendrier .medecinp{
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .boxCalendrier .realise{
+    margin-top: -24px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  
+  .exit-button {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    top :30px;
+    left:620px
+  }
+  
+  .line {
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    top: 50%;
+    left: 3px;
+    transform-origin: center;
+  }
+  
+  .line:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .line:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  

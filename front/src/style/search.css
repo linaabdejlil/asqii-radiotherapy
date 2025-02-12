@@ -1,0 +1,90 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar label {
+    margin-right: 10px;
+  }
+  
+  
+  .plus-button {
+    margin-left: 15px;
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #0099FF;
+    border: none;
+    position: relative;
+  }
+  
+  .plus-button:before, .plus-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .plus-button:before {
+   width: 30px;
+   height: 5px;
+   background-color:white; 
+   border-radius :2.5px; 
+  }
+  
+  .plus-button :after{
+     width :5px; 
+     height :30px; 
+     background-color:white; 
+     border-radius :2.5px; 
+  }
+  .plus-button:after {
+    width: 5px;
+    height: 30px;
+    background-color: white;
+    border-radius: 2.5px;
+  }
+  .searchinputdate {
+    background-color: #dcebfd00;
+    border: 2px solid;
+    border-color: #2662ee00;
+    color: #ffffff;
+    border-radius: 12px 0px 0px 12px;
+    height: 35px;
+    width: 80px;
+  }
+  .search-buttonDate{
+    background-color: #dcebfd00;
+    border-color: #2694ee7d;
+    height: 35px;
+    width: 35px;
+  }
+  .searchinput {
+    background-color: #dcebfd;
+    border: 2px solid;
+    border-color: #2663ee;
+    border-radius: 12px 12px 12px 12px;
+    height: 35px;
+    width: 200px;
+  }
+  .searchlabel {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .patientNomPrenom{
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    color: #233368;
+    border-color: #2662ee00;
+    background-color: #dcebfd00;
+  
+  
+  }
+  

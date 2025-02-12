@@ -1,0 +1,127 @@
+/* Styles pour la liste des notifications */
+.notification-list {
+    position: absolute;
+    background-color: rgb(226, 226, 226); /* Couleur de fond pour contraster avec la barre de navigation */
+    border: 1px solid #ddd; /* Bordure douce pour démarquer la liste */
+    border-radius: 5px; /* Arrondir les coins pour un aspect plus moderne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ajouter une ombre pour un effet de profondeur */
+    padding: 10px;
+    z-index: 100; /* Pour s'assurer qu'il est au-dessus des autres éléments */
+    max-height: 300px; /* Limiter la hauteur pour éviter que la liste soit trop longue */
+    overflow-y: auto; /* Permettre le défilement si la liste est trop longue */
+    color: blue;
+    margin-top: 30px;
+    
+  }
+  
+  /* Styles pour chaque notification individuelle */
+  .notification-item {
+    padding: 10px; /* Ajoutez un peu d'espace autour du texte */
+    border-bottom: 1px solid #ddd; /* Bordure entre les éléments */
+    cursor: pointer; /* Pour indiquer que l'élément peut être cliqué */
+    transition: background-color 0.2s; /* Transition douce pour l'effet de survol */
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none; /* Pas de bordure pour le dernier élément */
+  }
+  
+  /* Effet de survol pour chaque notification */
+  .notification-item:hover {
+    background-color: #f5f5f5; /* Changer la couleur de fond lors du survol */
+  }
+  /*making bell shape with one div */
+.bell {
+  border: 2.17px solid #233368;
+  border-radius: 10px 10px 0 0;
+  width: 15px;
+  height: 17px;
+  background: transparent;
+  display: block;
+  position: relative;
+  top: -3px;
+}
+.bell::before,
+.bell::after {
+  content: "";
+  background: #233368;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2.17px;
+}
+.bell::before {
+  top: 100%;
+  width: 20px;
+}
+.bell::after {
+  top: calc(100% + 4px);
+  width: 7px;
+}
+/*container main styling*/
+.notification {
+  background: transparent;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 300ms;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .notification:hover {
+    background: rgba(170, 170, 170, 0.062); /* Ensures a smooth transition on hover */
+  }
+  
+
+
+/*container background hover effect*/
+.notification:hover {
+  background: rgba(170, 170, 170, 0.062);
+}
+/*container animations*/
+.notification:hover > .bell-container {
+  animation: bell-animation 650ms ease-out 0s 1 normal both;
+}
+
+/*bell ring and scale animation*/
+@keyframes bell-animation {
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+    scale: 1.1;
+  }
+  60% {
+    transform: rotate(10deg);
+    scale: 1.1;
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 768px) {
+  .notifications-container {
+    top: 10px;
+    right: 500px;
+  }
+}
+.notification-text{
+  margin-left: 20px;
+  color: #233368;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+ 
+}
+

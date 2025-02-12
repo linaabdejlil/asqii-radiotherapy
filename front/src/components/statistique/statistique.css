@@ -1,0 +1,26 @@
+.stat1{ background: #ffffff;
+  
+    border-radius: 40px;
+    width: 610px; /* Modifiez la largeur en pourcentage */
+    height: 630px;
+    margin-top: -800px;
+    margin-left: 20px;
+  }
+  
+  /* Coins arrondis pour le tableau */
+  .stat1 .MuiDataGrid-root {
+    border-radius: 40px;
+  }
+  .stat2{ background: #ffffff;
+  
+    border-radius: 40px;
+    width: 1250px; /* Modifiez la largeur en pourcentage */
+    height: 630px;
+    margin-top: -630px;
+    margin-left: 650px;
+  }
+  
+  /* Coins arrondis pour le tableau */
+  .stat2 .MuiDataGrid-root {
+    border-radius: 40px;
+  }

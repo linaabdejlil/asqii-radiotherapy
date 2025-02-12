@@ -1,0 +1,32 @@
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 1000;
+    background-color: #0d0060; /* Initial blue color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes the button round */
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .chatbot-button.clicked {
+    background-color: #ff8800; /* Color when clicked */
+  }
+  
+  
+  .chatbot-card {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    width: 600px;
+
+  }
+  

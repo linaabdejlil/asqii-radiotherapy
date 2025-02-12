@@ -1,0 +1,376 @@
+
+
+.boxSignupUser{
+    background-color: #b0e7ffc9;
+    border-radius: 12px;
+    height: 700px;
+    left: 460px;
+    position: absolute;
+    top: 140px;
+    width: 950px;
+}
+
+.boxSignupUser .creerCompte{
+    margin-top: 20px;
+    margin-left: 340px;
+
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.boxSignupUser .prenom{
+    display: flex;
+    align-items: center;   
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.boxSignupUser .prenomUser{
+  margin-left: 60px;
+
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignupUser .inputprenomUser{
+    margin-left: 60px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 270px;
+    padding: 20px;
+
+}
+.boxSignupUser .nomUser{
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignupUser .inputnomUser{
+    margin-left: 60px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 270px;
+    padding: 20px;
+
+}
+
+.boxSignupUser .roleUser{
+  margin-left: 0px;
+  color: #233368;
+  font-family: "Montserrat-SemiBold" , Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.boxSignupUser .inputroleUser{
+  margin-left: 30px;
+  background-color: #c0d9ffc0;
+  border-color: rgba(124, 216, 255, 0);
+  border-radius: 12px;
+  height: 40px;
+  width: 270px;
+
+}
+
+.boxSignupUser .user{
+    display: flex;
+    align-items: center;   
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.boxSignupUser .adresseMailUser{
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-left: 60px;
+
+}
+.boxSignupUser .inputadresseMailUser{
+    margin-left: 80px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 270px;
+    padding: 20px;
+
+}
+.boxSignupUser .motDePasseUser{
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignupUser .inputmotDePasseUser{
+    margin-left: 1px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 270px;
+    padding: 20px;
+
+}
+
+.boxSignupUser .confirmerUser {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    width: 100px;
+    margin-left: 60px;
+
+    
+
+}
+
+.boxSignupUser .inputconfirmerUser{
+    margin-left: 15px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+    width: 270px;
+    padding: 20px;
+
+}
+
+
+.boxSignupUser .ddnUser{
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-left: 60px;
+
+}
+.boxSignupUser .telUser{
+  color: #233368;
+  font-family: "Montserrat-SemiBold" , Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  margin-left: 0px;
+
+}
+
+
+input::file-selector-button {
+  font-weight: bold;
+  color: #2663ee;
+  background-color: #c0d9ffc0;
+  border-color: rgba(124, 216, 255, 0);
+  border-radius: 50%;
+  height: 150px;
+ width: 150px;
+ padding: 0.5em;
+ margin-left: 30px;
+}
+
+.boxSignupUser .profile{
+  color: #233368;
+  font-family: "Montserrat-SemiBold" , Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boxSignupUser .inputddnUser{
+    margin-left: 40px;
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    height: 40px;
+   width: 270px;
+   padding: 20px;
+
+}
+.boxSignupUser .inputTelUser{
+  margin-left: 70px;
+  background-color: #c0d9ffc0;
+  border-color: rgba(124, 216, 255, 0);
+  border-radius: 12px;
+  height: 40px;
+ width: 270px;
+ padding: 20px;
+
+}
+.boxSignupUser .adresse{
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-left: 210px;
+margin-top: -100px;  
+}
+  
+  .boxSignupUser .inputadresseUser{
+      margin-left: 60px;
+      margin-top: -100px;
+      background-color: #c0d9ffc0;
+      border-color: rgba(124, 216, 255, 0);
+      border-radius: 12px;
+      height: 40px;
+     width: 270px;
+     padding: 20px;
+  
+  }
+.wrapperSingup{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    height: 80px;
+    position: absolute;
+    width: 270px;
+    margin-top: -170px;
+    margin-left: 545px;
+  }
+  .wrapperSingup .option{
+    background: #dcebfd;
+    height: 100%;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid #2663ee;
+    transition: all 0.3s ease;
+  
+  
+  }
+  
+  
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1{
+    border-color: #2663ee;
+    background: #2663ee;
+    border-radius: 12px 0px 0px 12px;
+  }
+  #option-2:checked:checked ~ .option-2{
+    border-color: #2663ee;
+    background: #2663ee;
+    border-radius: 0px 12px 12px 0px;
+  }
+  
+  #option-1 ~ .option-1{
+    border-radius: 12px 0px 0px 12px;
+  }
+  #option-2 ~ .option-2{
+    border-radius: 0px 12px 12px 0px;
+  } 
+  
+  
+  .wrapperSingup .option span{
+    font-size: 15px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fefefe;
+  }
+  
+
+.boxSignupUser .champ-textCreerCompte {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 150px;
+  }
+  .boxSignupUser .text-wrapperCreerCompte {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  .boxSignupUser .condition {
+    color: #444444d4;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    width: 700px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 0px;
+    top: 0px;
+
+  }
+  .boxSignupUser .sousCondition {
+    color: #2663ee;
+  }
+
+  .boxSignupUser .connecter {
+    margin-left: 480px;
+    margin-top: 10px;
+
+  }
+  .boxSignupUser .sous {
+    color: #2663ee;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  

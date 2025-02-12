@@ -1,0 +1,360 @@
+.boxPrescription {
+  height: 700px;
+  width: 1400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); 
+
+  }
+  
+  .boxPrescription .groupPrescription {
+    height: 700px;
+    left: 40px;
+    top: 0;
+    width: 1265px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+    width: 80%;
+  }
+  .boxPrescription .overlapPrescription {
+    background-size: 100% 100%;
+    height: 888px;
+    position: relative;
+    width: 1261px;
+  }
+  .boxPrescription .nouveau-Prescription-wrapperPrescription {
+    height: 51px;
+    left: 500px;
+    position: absolute;
+    top: 27px;
+    width: 545px;
+  }
+  
+  .boxPrescription .nouveau-Prescription {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 543px;
+  }
+  .boxPrescription .separation{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 500px;
+    position: absolute;
+    width: 3px;
+    margin-top: 40px;
+    margin-left: 570px;
+  }
+  .boxPrescription .close{
+    margin-left: 440px;
+    margin-top: -10px;
+  }
+  .boxPrescription .med{
+    margin-top: -37px;
+    margin-left: 90px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxPrescription .patient{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxPrescription .patientNom{
+    margin-top: -18px;
+    margin-left: 140px;
+    color: #00b3ff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .boxPrescription .localisation {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+  .boxPrescription .loc {
+    margin-right: 10px; /* Ajustez la marge pour l'espace entre les éléments */
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .boxPrescription .locinput {
+    color: #00b3ff;
+    border-color: #0069d900;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 3px;
+  }
+  
+  
+  .boxPrescription .medecin{
+    margin-left: 180px;
+  }
+  .boxPrescription .medecin2{
+    margin-left: 20px;
+  }
+  .boxPrescription .medecinp{
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .boxPrescription .realise{
+    margin-top: -24px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .boxPrescription .datePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .boxPrescription .CentrePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .boxPrescription .inputdatePrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 228px;
+    margin-top: -40px;
+  }
+
+  .boxPrescription .dosePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  .boxPrescription .inputdosePrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 228px;
+    margin-top: -35px;
+  }
+  .boxPrescription .etalementPrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  .boxPrescription .inputetalementPrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 228px;
+    margin-top: -35px;
+  }
+  .boxPrescription .volumePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 600px;
+    margin-top: 35px;
+  }
+  .boxPrescription .inputvolumePrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 750px;
+    margin-top: -35px;
+  }
+  .boxPrescription .inputcentreTraitement{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 45px;
+    position: absolute;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 33px;
+  }
+  .boxPrescription .techniquePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 600px;
+    margin-top: -350px;
+  }
+  .boxPrescription .inputtechniquePrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 750px;
+    margin-top: -38px;
+  }
+  .boxPrescription .fractionementPrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .boxPrescription .inputfractionementPrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 35px;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    margin-left: 228px;
+    margin-top: -38px;
+  }
+  .boxPrescription .remarquePrescription{
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 600px;
+    margin-top: 50px;
+  }
+  .boxPrescription .inputremarquePrescription{
+    border-color: #0069d900;
+    background-color: #dcebfd;
+    border-radius: 12px;
+    height: 180px;
+    position: absolute;
+    width: 450px;
+    padding: 20px;
+    margin-left: 620px;
+    margin-top: 20px;
+  }
+  .boxPrescription  .divPrescription {
+    height: 30px;
+    position: absolute;
+    width: 1000px;
+    top:620px;
+    left: 140px;
+  }
+  
+  .boxPrescription .champ-textPrescription {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 480px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 350px;
+  }
+  
+  .boxPrescription .text-wrapperPrescription {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .boxPrescription .div-wrapperPrescription {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 0;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 350px;
+  }
+  
+  
+

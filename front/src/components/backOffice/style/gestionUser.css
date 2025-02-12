@@ -1,0 +1,122 @@
+.tableauUsers {
+    background: #f8f9fdb3;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.893) 0%,
+      rgba(244, 247, 251, 0.887) 100%
+    );
+    border-radius: 40px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    width: 85%; /* Modifiez la largeur en pourcentage */
+    max-width: 1650px; /* Ajoutez une largeur maximale */
+    height: 750px;
+    margin-top: 120px;
+    margin-left: 260px;
+  }
+  
+  /* Coins arrondis pour le tableau */
+  .tableauUsers .MuiDataGrid-root {
+    border-radius: 40px;
+  }
+  .bin-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(255, 95, 95);
+    cursor: pointer;
+    border: 2px solid rgb(255, 201, 201);
+    transition-duration: 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .bin-bottom {
+    width: 15px;
+    z-index: 2;
+  }
+  .bin-top {
+    width: 17px;
+    transform-origin: right;
+    transition-duration: 0.3s;
+    z-index: 2;
+  }
+  .bin-button:hover .bin-top {
+    transform: rotate(45deg);
+  }
+  .bin-button:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  .bin-button:active {
+    transform: scale(0.9);
+  }
+  .garbage {
+    position: absolute;
+    width: 14px;
+    height: auto;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .bin-button:hover .garbage {
+    animation: throw 0.4s linear;
+  }
+  @keyframes throw {
+    from {
+      transform: translate(-400%, -700%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+  }
+  .buttonEdit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 2px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: #a549da3d;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .lableEdit {
+    line-height: 22px;
+    font-size: 19px;
+    color: #A649DA;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .buttonEdit:hover {
+    background: #a549da62;
+  }
+  
+  .buttonEdit:hover .svg-icon {
+    animation: lr 1s linear infinite;
+  }
+  
+  @keyframes lr {
+    0% {
+      transform: translateX(0);
+    }
+  
+    25% {
+      transform: translateX(-1px);
+    }
+  
+    75% {
+      transform: translateX(1px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

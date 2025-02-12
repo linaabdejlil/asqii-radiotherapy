@@ -1,0 +1,25 @@
+.boxSearchMed {
+    height: 700px;
+    width: 1261px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+}
+.boxSearchMed .groupSearchMed {
+    height: 888px;
+    left: 0;
+    top: 0;
+    width: 1265px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .boxSearchMed .overlapSearchMed {
+    background-size: 100% 100%;
+    height: 888px;
+    position: relative;
+    width: 1261px;
+  }

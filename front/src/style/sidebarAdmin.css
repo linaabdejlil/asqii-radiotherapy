@@ -1,0 +1,235 @@
+
+.sidebarAdmin-wrapper .container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 10rem auto 23rem;
+    
+}
+.sidebarAdmindashboard {
+    margin-left: 30px;
+    width: 300px;
+    border-radius: 70px!important;
+}
+
+.sidebarAdmin-wrapper aside {
+    height: 40vh;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    height: 88vh;
+    position: relative;
+    top: 1.5rem;
+    margin-top: 10px;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin:hover {
+    box-shadow: none;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a span {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a.active {
+    width: 108%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+    
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a.active::before {
+    content: '';
+    width: 6px;
+    height: 18px;
+    background-color: var(--color-primary);
+    margin-left: -20px;
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a.active span {
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a:hover {
+    color: var(--color-primary);
+}
+
+.sidebarAdmin-wrapper aside .sidebarAdmin a:hover span {
+    margin-left: 0.6rem;
+}
+
+/* Styles spécifiques au bouton Nouveau */
+.sidebarAdmin-wrapper .createtempboutton {
+    display: flex;
+    align-items: center;
+    background-color: #180d6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebarAdmin-wrapper .createtempboutton:hover {
+    background-color: #191189;
+}
+
+.sidebarAdmin-wrapper .Nouveauicon {
+    margin-right: 10px;
+}
+
+.sidebarAdmin-wrapper .NouveauTxt {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Styles spécifiques aux options supplémentaires */
+.sidebarAdmin-wrapper .option-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebarAdmin-wrapper .option-links div {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #677483;
+}
+
+.sidebarAdmin-wrapper .option-links div:hover {
+    color: #6C9BCF;
+}
+
+/* Styles généraux */
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* Styles spécifiques au composant SidebarDashboard */
+.sidebarAdmin-wrapper {
+    /* Réinitialisation des styles pour cet élément */
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+    height: 300px;
+}
+
+.sidebarAdmin-wrapper html {
+    font-size: 14px;
+}
+
+.sidebarAdmin-wrapper body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+.sidebarAdmin-wrapper a {
+    color: var(--color-dark);
+}
+
+.sidebarAdmin-wrapper img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebarAdmin-wrapper h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.sidebarAdmin-wrapper h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.sidebarAdmin-wrapper h3 {
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+.sidebarAdmin-wrapper small {
+    font-size: 0.76rem;
+}
+
+.sidebarAdmin-wrapper p {
+    color: var(--color-dark-variant);
+}
+
+.sidebarAdmin-wrapper b {
+    color: var(--color-dark);
+}
+
+
+.text-muted {
+    color: var(--color-info-dark);
+}

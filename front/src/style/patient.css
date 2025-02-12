@@ -1,0 +1,597 @@
+.boxPatient {
+    height: 700px;
+    width: 1261px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  
+  
+  .boxPatient .groupPatient {
+    height: 888px;
+    left: 0;
+    top: 0;
+    width: 1265px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .boxPatient .overlapPatient {
+    background-size: 100% 100%;
+    height: 888px;
+    position: relative;
+    width: 1261px;
+  }
+  
+  .boxPatient .nouveau-patient-wrapperPatient {
+    height: 51px;
+    left: 500px;
+    position: absolute;
+    top: 27px;
+    width: 545px;
+  }
+  
+  .boxPatient .nouveau-patient {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 543px;
+  }
+  
+  .boxPatient .divPatient {
+    height: 51px;
+    left: 237px;
+    position: absolute;
+    top: 750px;
+    width: 855px;
+  }
+  
+  .boxPatient .champ-textPatient {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 508px;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 347px;
+  }
+  
+  .boxPatient .text-wrapperPatient {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .boxPatient .div-wrapperPatient {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    left: 0;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    top: 0;
+    width: 347px;
+  }
+  
+  .boxPatient .group-2Patient {
+    height: 54px;
+    left: 68px;
+    position: absolute;
+    top: 174px;
+    width: 503px;
+
+  }
+  
+  .boxPatient .group-wrapperPatient {
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 75px;
+  }
+  
+  .boxPatient .group-3Patient {
+    height: 22px;
+    position: relative;
+    width: 77px;
+  }
+  
+  
+  .boxPatient .text-wrapper-2Patient {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 75px;
+  }
+  
+  .boxPatient .rectanglePatient {
+    background-color: #dcebfd;
+    border-color: #2662ee00;
+  
+    border-radius: 12px;
+    height: 54px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 334px;
+    padding: 30px;
+  }
+  .boxPatient .rectanglePatientS {
+    background-color: #dcebfd;
+    border-color: #2662ee00;
+  
+    border-radius: 12px;
+    height: 54px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 334px;
+  }
+  
+  .boxPatient .rectangle-2Patient {
+    background-color: #dcebfd;
+    border-color: #2663ee;
+  
+    border-radius: 12px;
+    height: 650px;
+    left: 650px;
+    position: absolute;
+    top: 78px;
+    width: 3px;
+  }
+  
+  .boxPatient .group-4Patient {
+    height: 54px;
+    left: 68px;
+    position: absolute;
+    top: 260px;
+    width: 503px;
+
+  }
+  
+  .boxPatient .group-5Patient {
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 119px;
+  }
+  
+  .boxPatient .group-6Patient {
+    height: 19px;
+    position: relative;
+    width: 121px;
+  }
+  
+  .boxPatient .text-wrapper-3Patient {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 119px;
+  }
+  
+  .boxPatient .group-7Patient {
+    height: 54px;
+    left: 68px;
+    position: absolute;
+    top: 346px;
+    width: 503px;
+
+  }
+  
+  .boxPatient .overlap-group-wrapperPatient {
+    height: 54px;
+    left: 68px;
+    position: absolute;
+    top: 444px;
+    width: 503px;
+
+  }
+  
+  .boxPatient .overlap-groupPatient {
+    height: 54px;
+    position: relative;
+
+  }
+  
+  .boxPatient .group-8Patient {
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 50px;
+  }
+  
+  .boxPatient .date-de-naissance-wrapperPatient {
+    height: 19px;
+    position: relative;
+    width: 194px;
+  }
+  
+  .boxPatient .date-de-naissancePatient {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 192px;
+  }
+  
+  .boxPatient .group-9Patient {
+    height: 54px;
+    left: 68px;
+    position: absolute;
+    top: 525px;
+    width: 503px;
+
+  }
+  
+  
+  .boxPatient .group-10Patient {
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 75px;
+  }
+  
+  
+  
+  .boxPatient .rectangle-3Patient {
+    background-color: #2663ee;
+    border: 2px solid;
+    border-radius: 12px 0px 0px 12px;
+    height: 49px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 167px;
+  }
+  
+  .boxPatient .rectangle-4Patient {
+    background-color: #dcebfd;
+    border: 2px solid;
+    border-color: #2663ee;
+    border-radius: 12px 0px 0px 12px;
+    height: 49px;
+    left: 158px;
+    position: absolute;
+    top: 0;
+    transform: rotate(-180deg);
+    width: 176px;
+  }
+  
+  .boxPatient .homme {
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    left: 56px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+    width: 85px;
+  }
+  
+  .boxPatient .femme {
+    color: #2663ee;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    left: 208px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+    width: 103px;
+  }
+  
+  .boxPatient .group-11Patient {
+    height: 54px;
+    left: 691px;
+    position: absolute;
+    top: 174px;
+    width: 503px;
+
+  }
+  
+  .boxPatient .group-12Patient {
+    height: 54px;
+    left: 691px;
+    position: absolute;
+    top: 260px;
+    width: 503px;
+    padding: 30px;
+
+  }
+  
+  .boxPatient .group-13Patient {
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 128px;
+  }
+  
+  .boxPatient .s-curit-sociale-wrapperPatient {
+    height: 19px;
+    position: relative;
+    width: 130px;
+  }
+  
+  .boxPatient .text-wrapper-4Patient {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 128px;
+  }
+  
+  .boxPatient .rectangle-5Patient {
+    background-color: #dcebfd;
+    border-color: #2662ee00;
+  
+    border-radius: 12px;
+    height: 54px;
+    left: 956px;
+    position: absolute;
+    top: 349px;
+    width: 238px;
+    padding: 30px;
+
+  }
+  
+  .boxPatient .rectangle-6Patient {
+    background-color: #dcebfd;
+    border-color: #2663ee;
+  
+    border-radius: 12px;
+    height: 54px;
+    left: 860px;
+    position: absolute;
+    top: 349px;
+    width: 86px;
+    padding: 30px;
+
+  }
+  .boxPatient .rectangle-NPatient {
+    background-color: #dcebfd;
+    border-color: #2663ee;
+  
+    border-radius: 12px;
+    height: 54px;
+    left: 860px;
+    position: absolute;
+    top: 450px;
+    width: 86px;
+    padding: 30px;
+
+  }
+  
+  .boxPatient .group-14Patient {
+    height: 90px;
+    left: 691px;
+    position: absolute;
+    top: 435px;
+    width: 503px;
+  }
+  .boxPatient .group-NPatient {
+    height: 90px;
+    left: 691px;
+    position: absolute;
+    top: 510px;
+    width: 503px;
+  }
+  
+  .boxPatient .group-15Patient {
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 124px;
+  }
+  
+  .boxPatient .group-16Patient {
+    height: 19px;
+    position: relative;
+    width: 126px;
+  }
+  
+  .boxPatient .text-wrapper-5Patient {
+    color: #233368;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 124px;
+  }
+  
+  .boxPatient .rectangle-7Patient {
+    background-color: #dcebfd;
+    border-color: #0069d900;
+    border-radius: 12px;
+    height: 54px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 334px;
+    padding: 30px;
+
+  }
+  
+  .boxPatient .group-17Patient {
+    height: 88px;
+    left: 691px;
+    position: absolute;
+    top: 600px;
+    width: 503px;
+  }
+  
+  .boxPatient .rectangle-8Patient {
+    background-color: #dcebfd;
+    border-color: #0069d900;
+    border-radius: 12px;
+    height: 88px;
+    left: 169px;
+    position: absolute;
+    top: 0;
+    width: 334px;
+  }
+  
+  .boxPatient .group-18Patient {
+    height: 19px;
+    left: 68px;
+    position: absolute;
+    top: 634px;
+    width: 77px;
+  }
+  
+  .boxPatient .num-ro-de-telephone-wrapperPatient {
+    height: 19px;
+    left: 691px;
+    position: absolute;
+    top: 357px;
+    width: 130px;
+  }
+  
+  .boxPatient .overlap-2Patient {
+    height: 49px;
+    left: 237px;
+    position: absolute;
+    top: 623px;
+    width: 334px;
+  }
+  .check {
+    width: 1.9em;
+    height: 1.9em;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #B7B7B7;
+    appearance: none;
+    
+   
+  }
+  
+  .check:checked {
+  
+   border: 3px solid #00C6BA;
+    
+    
+   
+  }
+  .wrapperg{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    height: 88px;
+    left: 237px;
+    position: absolute;
+    top: 600px;
+    width: 500px;
+  }
+  .wrapperg .option{
+    background: #dcebfd;
+    height: 100%;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid #0069d9;
+    transition: all 0.3s ease;
+  
+  
+  }
+  
+  
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1{
+    border-color: #0069d9;
+    background: #0069d9;
+    border-radius: 12px 0px 0px 12px;
+  }
+  #option-2:checked:checked ~ .option-2{
+    border-color: #0069d9;
+    background: #0069d9;
+    border-radius: 0px 12px 12px 0px;
+  }
+  
+  #option-1 ~ .option-1{
+    border-radius: 12px 0px 0px 12px;
+  }
+  #option-2 ~ .option-2{
+    border-radius: 0px 12px 12px 0px;
+  } 
+  
+  
+  .wrapperg .option span{
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fefefe;
+  }
+  

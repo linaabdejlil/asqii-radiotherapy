@@ -1,0 +1,398 @@
+
+  .Tableau{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border-collapse: collapse;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 70%;
+
+  }
+  
+  .avatar {
+    font-size: 1rem;
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #adb5bd;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .avatar-sm {
+    font-size: .875rem;
+    width: 36px;
+    height: 36px;
+  }
+  .fixed-column {
+    position: sticky;
+    left: 0; /* Fixe la colonne à gauche */
+    z-index: 1; /* Pour s'assurer que la colonne reste au-dessus du contenu qui défile */
+    background-color: rgba(255, 255, 255, 0); 
+  }
+
+  
+  .avatar-group {
+    display: flex;
+    align-items: center; /* Aligner les éléments verticalement au centre */
+  }
+  
+  
+  .avatar-group .avatar {
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff;
+  }
+  
+  .avatar-group .avatar:hover {
+    z-index: 3;
+  }
+  
+  .avatar-group .avatar + .avatar {
+    margin-left: -1rem;
+  }
+  .seances{
+    color: #00C6BA;
+    font-family: "Montserrat-SemiBold", sans-serif , Bold;
+    font-size: 18px;
+  
+  }
+ 
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  .high-dash {
+    vertical-align: top;
+    width: 1.9em;
+    color: #B7B7B7;
+  }
+   
+  .plus-med {
+    margin-left: 15px;
+  
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #0099FF;
+    border: none;
+    position: relative;
+  }
+  
+  .plus-med:before, .plus-med:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .plus-med:before {
+   width: 30px;
+   height: 5px;
+   background-color:white; 
+   border-radius :2.5px; 
+  }
+  
+  .plus-med :after{
+     width :5px; 
+     height :30px; 
+     background-color:white; 
+     border-radius :2.5px; 
+  }
+  .plus-med:after {
+    width: 5px;
+    height: 30px;
+    background-color: white;
+    border-radius: 2.5px;
+  }
+
+  .check {
+    width: 1.9em;
+    height: 1.9em;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #B7B7B7;
+    appearance: none;   
+  }
+  
+  .check:checked {
+  
+   border: 3px solid #00C6BA;
+    
+  }
+  .checkprescription {
+    width: 1.9em;
+    height: 1.9em;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #ff8800;
+    appearance: none;   
+  }
+  .checkprescription:checked {
+  
+    border: 3px solid #00C6BA;
+     
+   }
+  .checkAttent {
+    width: 1.9em;
+    height: 1.9em;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #ff8800;
+    appearance: none;   
+  }
+  
+  .check:checked {
+  
+   border: 3px solid #00C6BA;
+    
+  }
+  .toggleColonnes{
+    margin-left: 400px;
+  }
+ 
+
+  .b {
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    cursor: pointer;
+    outline: 0px;
+    padding: 0 2px;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .backdrop {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(36, 33, 228);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .b:hover + .backdrop {
+    top: 48%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .b:active,.button:active +.backdrop {
+    box-shadow: none;
+  }
+  .b.active {
+    background-color: #ff8800;
+    color: rgb(255, 255, 255);
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus du contenu du tableau */
+}
+
+
+.avatar {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 70px;
+}
+
+.avatar:hover .overlay {
+  opacity: 1;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  
+  
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 5px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+
+.table-container {
+  max-height: 1800px; /* Ajustez la hauteur maximale selon vos besoins */
+  border-radius: 10px; /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.c-button .c-main {
+  border-radius: 45px;
+  color: rgba(255, 255, 255, 1);
+  padding: 11px 25px 11px 11px;
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(140deg, rgb(0, 217, 255) 0%, rgb(36, 33, 228) 100%);
+  font-size: 18px;
+  text-align: left;
+  box-shadow: -6px -5px 18px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.c-ico .c-blur {
+  background: linear-gradient(318deg, rgb(0, 217, 255) 0%, rgb(36, 33, 228) 100%);
+  border-radius: 100%;
+  margin-left: 0;
+  padding: 8px 23px;
+  filter: blur(1px);
+  text-align: center;
+}
+
+.c-ico {
+  position: relative;
+  margin-right: 20px;
+}
+
+.c-ico .ico-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hovering */
+
+.c-button .c-main:hover {
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0.6);
+  border: 1px solid rgba(26, 26, 26,0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+.groupSearch {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.inputSearch {
+  width: 130%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  background-color: #dcebfd;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.inputSearch::placeholder {
+  color: #9e9ea7;
+}
+
+.inputSearch:focus,
+.inputSearch:hover {
+  outline: none;
+  border-color: rgba(247, 127, 0, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+
+.iconSearch {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+.fixed-column {
+  position: sticky;
+  right: 0;
+  z-index: 0;
+}
+.table-body {
+  max-height: 800px; /* ou la hauteur maximale souhaitée */
+  overflow-y: auto; /* Activer le défilement vertical */
+}
+
+

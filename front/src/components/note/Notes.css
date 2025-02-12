@@ -1,0 +1,723 @@
+.cardNote {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    border-radius: 24px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentNote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 36px;
+    border-radius: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    height: 600px;
+    background: #0d0060;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .actions-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between elements as needed */
+}
+
+  .inputNoteTime{    background: #0d0060;
+  }
+  .contentNote::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+  
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentNote::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentNote svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .contentNote .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentNote .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .contentNote .link:hover {
+    text-decoration: underline;
+  }
+  
+  .cardNote:hover {
+    transform: translate(0px, -16px);
+  }
+  
+  .cardNote:hover .content::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cardNote:hover .content::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .choixOutil {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* This adds space between buttons */
+    margin-top: -30px;
+    margin-left: -20px;
+  }
+  
+  .btnNote {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; /* Makes the button round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(244, 244, 250);
+
+  }
+  
+  .btnNote.active {
+    background-color: #ff8800; /* Active button background */
+  }
+  
+  .btnNote svg {
+    font-size: 8px; /* Adjust icon size */
+    color: #1b50ff; /* Default icon color */
+  }
+  
+  .btnNote.active svg {
+    color: rgb(244, 244, 250); /* Active icon color */
+  }
+  .titreNote {
+    display: flex; /* Aligns children (title and input) inline */
+    align-items: center; /* Vertically center the items in the container */
+    gap: 8px; /* Optional: Adds some space between the title and the input */
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .inputtitreNote {
+    width: 800px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background-color: #dcebfd;
+    color: #0d0c22;
+    transition: 0.3s ease; 
+    margin-left: 10px;
+  }
+  
+  .inputtitreNote::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .inputtitreNote:focus,
+  .inputtitreNote:hover {
+    outline: none;
+    border-color: rgba(247, 127, 0, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+  }
+  .titreNotetitre{ 
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-right: 10px; /* Ensures some spacing between the text and the input */
+    white-space: nowrap; /* Prevents the title from wrapping */
+  }
+  .inputNoteTime{
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .type{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    height: 80px;
+    border-color: #1b50ff;
+  
+    left: 287px;
+    position: absolute;
+    top: 475px;
+    width: 250px;
+  }
+  .type .optiontype{
+    background: #dcebfd;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid #1b50ff;
+    transition: all 0.3s ease;
+  
+  
+  }
+  .type input[type="radio"]{
+    display: none;
+  }
+  .type #privé:checked:checked ~ .privé{
+    border-color: #1b50ff;
+    background: #1b50ff;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .type #publique:checked:checked ~ .publique{
+    border-color: #1b50ff;
+    background: #1b50ff;
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  .type #privé ~ .privé{
+    border-radius: 15px 0px 0px 15px;
+  }
+  .type #publique ~ .publique{
+    border-radius: 0px 15px 15px 0px;
+  } 
+  
+  
+  .type .optiontype span{
+    font-size: 20px;
+    color: #808080;
+  }
+  .type #privé:checked:checked ~ .privé span,
+  .type #publique:checked:checked ~ .publique span{
+    color: #fefefe;
+  }
+  
+  /* Ajoutez ces styles à votre fichier CSS ou à votre balise <style> dans le fichier JSX */
+
+/* Style pour le conteneur principal */
+.speech-to-text-container {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  border-radius: 24px;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .speech-control-container {
+    display: flex; /* Aligns children (button and div) in a row */
+    align-items: center; /* Centers children vertically */
+  }
+  .bouttonListening, .rapportspeachtotext {
+    margin-right: 10px; /* Adds space between the button and the text div */
+    white-space: nowrap; /* Prevents wrapping within elements */
+  }
+  
+ 
+  /* Style pour le titre */
+  .titlespeachtotext {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+  }
+  
+  .bouttonListening {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%; /* Makes the button round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(244, 244, 250);
+    margin-left: 40px;
+    margin-top: -60px;
+  }
+  
+  .bouttonListening:hover {
+    background-color: #ff8800; /* Active button background */
+  }
+  
+
+/* Style pour la zone de texte reconnue */
+.rapportspeachtotext {
+  width: 100%; /* Utiliser 100% pour s'assurer que la largeur est flexible */
+  max-width: 800px; /* Limite la largeur à 800px */
+  height: 100px;
+  padding: 10px;
+  line-height: 28px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  background-color: #dcebfd;
+  color: #0d0c22;
+  transition: 0.3s ease;
+  padding-left: 2.5rem;
+  margin-bottom: 20px;
+  overflow-y: auto; /* Défilement vertical uniquement */
+  word-wrap: break-word; /* Permet aux mots de se casser */
+  overflow-wrap: break-word; /* Pour plus de compatibilité */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Optionnel: Style pour le texte à l'intérieur du div */
+.rapportspeachtotext span {
+  display: inline-block; /* Assure que le texte s'ajuste correctement */
+  max-width: 100%; /* Limite la largeur du texte à celle du conteneur */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.rapportspeachtotext::placeholder {
+  color: #9e9ea7;
+}
+
+.rapportspeachtotext:focus,
+.rapportspeachtotext:hover {
+  outline: none;
+  border-color: rgba(247, 127, 0, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+
+
+  
+  .ajouterNote {
+    font-family: inherit;
+    font-size: 18px;
+    background: #1b50ff;
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  .ajouterNote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ajouterNote:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ajouterNote span {
+    display: inline-block;
+  vertical-align: middle; /* Aligns text vertically center with the icon */
+  margin-left: 5px; /* Optional: Adds a small space between the icon and text */
+}
+  
+  .ajouterNote svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  .ajouterNote .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  .ajouterNote:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .ajouterNote:hover svg {
+    transform: rotate(45deg);
+  }
+  
+   
+  /* Ajoutez ces styles à votre fichier CSS ou à votre balise <style> dans le fichier JSX */
+
+/* Style pour le conteneur principal */
+.rapport-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  border-radius: 24px;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  /* Style pour le titre */
+  .titlerapportmanuelle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour les boutons de choix de composant */
+  .composantrapportmanuelle button {
+    background-color: #0083DA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+
+  
+  /* Style pour la zone de texte du rapport */
+  .textarearapportmanuelle  {
+    width: 800px;
+    min-height: 200px; /* Hauteur minimale */
+    padding: 10px;
+    line-height: 28px;
+    padding: 0 1rem;
+     border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background-color: #dcebfd;
+    color: #0d0c22;
+    transition: 0.3s ease;padding-left: 2.5rem;
+    margin-bottom: 20px;
+    overflow-y: auto; /* Ajout de défilement vertical si nécessaire */
+    margin-left: 30px;
+  }
+ 
+  
+  .textarearapportmanuelle::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .textarearapportmanuelle:focus,
+  .textarearapportmanuelle:hover {
+    outline: none;
+    border-color: rgba(247, 127, 0, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+  }
+  /* Ajoutez ces styles à votre fichier CSS ou à votre balise <style> dans le fichier JSX */
+
+/* Style pour le conteneur principal */
+.chat-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  border-radius: 24px;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  flex-direction: column; /* Aligns children vertically */
+  align-items: center; /* Centers children horizontally */
+  gap: 10px; /* Adds space between each child */
+  }
+  
+  /* Style pour le titre */
+  .chataititle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour la zone de texte de la question */
+  .chataiquestion {
+    width: 800px;
+    height: 100px;
+    min-height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    line-height: 28px;
+  padding: 0 1rem;
+   border: 2px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  background-color: #dcebfd;
+  color: #0d0c22;
+  transition: 0.3s ease;padding-left: 2.5rem;
+  overflow-y: auto; /* Ajout de défilement vertical si nécessaire */
+  margin-left: 30px;
+}
+.response-container {
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Vertical alignment */
+  gap: 10px; /* Space between elements */
+}
+
+.chataiquestion::placeholder {
+  color: #9e9ea7;
+}
+
+.chataiquestion:focus,
+.chataiquestion:hover {
+  outline: none;
+  border-color: rgba(247, 127, 0, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+  /* Style pour le bouton de génération de réponse */
+  .chataigenerateAnswer {
+    background-color: #0083DA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    flex: 0 0 auto; /* Button does not grow or shrink */
+
+  }
+  .chataiSoumettre {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  
+  .chataiSoumettre:hover {
+    background-color: #1ca03a;
+  }
+  
+  /* Style pour la zone de réponse */
+  .chataiAnswer {
+    width: 800px;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    flex: 1; /* Paragraph takes the remaining space */
+max-height: 150px;
+    line-height: 28px;
+    padding: 0 1rem;
+     border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background-color: #dcebfd;
+    color: #0d0c22;
+    transition: 0.3s ease;padding-left: 2.5rem;
+    margin-bottom: 20px;
+    overflow-y: auto; /* Ajout de défilement vertical si nécessaire */
+    margin-left: 30px;
+  }
+ 
+  
+  .chataiAnswer::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .chataiAnswer:focus,
+  .chataiAnswer:hover {
+    outline: none;
+    border-color: rgba(247, 127, 0, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+  }
+  
+  .genererReponse {
+    background: #2389e9;
+    padding: 30px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: all .5s ease-in-out;
+  }
+  
+  .genererReponse:hover {
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+  }
+  
+  .genererReponse:hover:before {
+    margin-left: 0%;
+    transform: rotate(24deg);
+  }
+  
+  .genererReponse::before {
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtNTczLjE4IDE5OC42MnYwbC0zOTYuMDkgNjMuNzE5Yy03Ljc1IDAuODU5MzgtOS40NzI3IDExLjE5NS0zLjQ0NTMgMTUuNWw5Ny4zMDEgNjguODgzLTE1LjUgMTEyLjhjLTAuODU5MzggNy43NSA3Ljc1IDEyLjkxNCAxMy43NzcgNy43NWw1NS4xMDktNDQuNzczIDI2LjY5MSAxMjQuODVjMS43MjI3IDcuNzUgMTEuMTk1IDkuNDcyNyAxNS41IDIuNTgybDIxNS4yNy0zMzguMzljMy40NDE0LTYuMDI3My0xLjcyNjYtMTMuNzc3LTguNjEzMy0xMi45MTR6bS0zNzIuODQgNzYuNjMzIDMxMy40Mi00OS45NDEtMjMzLjM0IDEwNy42M3ptNzQuMDUxIDE2NS4zMiAxMi45MTQtOTIuMTMzYzgwLjkzOC0zNy4wMjcgMTM5LjQ5LTY0LjU3OCAyMjkuMDQtMTA1LjkxLTEuNzE4OCAxLjcyMjctMC44NTkzNyAwLjg1OTM4LTI0MS45NSAxOTguMDR6bTg4LjY4OCA4Mi42Ni0yNC4xMDktMTEyLjggMTk5Ljc3LTE2Mi43NHoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==");
+    height: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    transition: all .9s ease-in-out;
+    background-size: 100%;
+  }
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.buttonNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+  gap: 8px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  background: #056bfa27;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 1400px;
+  margin-top: 50px;
+}
+
+.lableNote {
+  margin-top: 1px;
+  font-size: 19px;
+  line-height: 22px;
+  color: #056DFA;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.buttonNote:hover {
+  background: #056bfa49;
+}
+
+.buttonNote:hover .svg-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.containerNoteFile {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow-x: auto; /* Permet le scroll horizontal */
+  margin-top: -35px;
+  margin-bottom: 40px;
+  margin-left: 85px;
+
+}
+
+.cardNoteFile {
+  background: rgba(63, 137, 235, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.containerNoteFile:hover > :not(:hover) {
+  opacity: 0.2;
+}
+
+.addFileNote {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed royalblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.addFileNote svg {
+  height: 100px;
+}
+
+.addFileNote p {
+  text-align: center;
+  color: black;
+}

@@ -1,0 +1,436 @@
+.boxSignin{
+    background-color: #b0e7ffc9;
+    border-radius: 12px;
+    height: 700px;
+    left: 670px;
+    position: absolute;
+    top: 130px;
+    width: 600px;
+}
+
+.boxSignin .adresseMail{
+    margin-top: 50px;
+    margin-left: 110px;
+
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignin .inputadresseMail{
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+}
+.boxSignin .connexion{
+    margin-top: 20px;
+    margin-left: 220px;
+
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignin .motDePasse{
+    margin-top: 30px;
+    margin-left: 110px;
+
+    color: #233368;
+    font-family: "Montserrat-SemiBold" , Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.boxSignin .inputmotDePasse{
+    background-color: #c0d9ffc0;
+    border-color: rgba(124, 216, 255, 0);
+
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+
+
+
+}
+.boxSignin .mot-de-passe-oubli-e {
+    color: #1b50ff;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 201px;
+    height: 16px;
+    margin-left: 210px;
+    top: 130px;
+  }
+  .boxSignin .souvenir{
+    background-color: #c0d9ffcd;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+}
+.boxSignin .se-souvenir-de-moi{
+    color: #444444d4;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 166px;
+    height: 16px;
+    margin-left: 90px;
+    margin-top: -30px;
+}
+.boxSignin .champ-textConnexion {
+    align-items: center;
+    background-color: #2663ee;
+    border-color: #0069d900;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 51px;
+    justify-content: center;
+    padding: 8px 75px 8px 80px;
+    position: absolute;
+    width: 300px;
+    margin-left: 140px;
+    margin-top: 50px;
+  }
+  .boxSignin .text-wrapperConnexion {
+    color: #ffffff;
+    border-color: #0069d900;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  .boxSignin .s-inscrire {
+    color: #1b50ff;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 80px;
+    height: 16px;
+    margin-left: 80px;
+    margin-top: 170px;
+  }
+  .boxSignin .si-vous-ne-poss-dez-encore-du-compte {
+    color: #444444d4;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 326px;
+    height: 45px;
+    margin-left: 170px;
+    margin-top: -15px;
+
+
+  }
+
+  .menuPos{
+    margin-left: 20px;
+  }
+  
+.gg-align-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-left: 2px solid;
+  transform: scale(var(--ggs,1));
+  margin-left: -4px
+}
+.gg-align-left::after,
+.gg-align-left::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  height: 4px;
+  width: 12px;
+  background: currentColor;
+  left: 2px;
+  top: 1px
+}
+.gg-align-left::after {
+  width: 6px;
+  top: 7px;
+  opacity: .5
+}
+.gg-bell,
+.gg-bell::before {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px
+}
+.gg-bell {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid;
+    border-bottom: 0;
+    width: 14px;
+    height: 14px
+}
+.gg-bell::after,
+.gg-bell::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-bell::before {
+    background: currentColor;
+    width: 4px;
+    height: 4px;
+    top: -4px;
+    left: 3px
+}
+.gg-bell::after {
+    border-radius: 3px;
+    width: 16px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-top: 1px solid transparent;
+    box-shadow:
+        inset 0 0 0 4px,
+        0 -2px 0 0;
+    top: 14px;
+    left: -3px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px
+}
+.gg-comment {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 30px; /* Augmentation de la largeur */
+  height: 24px; /* Augmentation de la hauteur */
+  border: 3px solid; /* Augmentation de l'épaisseur de la bordure */
+  border-bottom: 0;
+  box-shadow:
+      -9px 12px 0 -9px, /* Ajustement des ombres pour correspondre à la nouvelle taille */
+      9px 12px 0 -9px;
+  margin-top: -12px;    
+}
+
+.gg-comment::after,
+.gg-comment::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 12px; /* Ajustement de la largeur des pseudo-éléments */
+}
+
+.gg-comment::before {
+  border: 3px solid; /* Augmentation de l'épaisseur de la bordure */
+  border-top-color: transparent;
+  border-bottom-left-radius: 30px; /* Ajustement du rayon pour un meilleur arrondi */
+  right: 6px; /* Ajustement de la position droite */
+  bottom: -9px; /* Ajustement de la position bas */
+  height: 9px; /* Ajustement de la hauteur */
+}
+
+.gg-comment::after {
+  height: 3px; /* Augmentation de la hauteur du trait horizontal */
+  background: currentColor;
+  box-shadow: 0 6px 0 0; /* Ajustement de l'ombre pour correspondre à la nouvelle taille */
+  left: 6px; /* Ajustement de la position gauche */
+  top: 6px; /* Ajustement de la position haut */
+}
+
+
+
+.gg-attachment {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-top: 0;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  transform: scale(var(--ggs,1)) rotate(-0deg); /* Inclinaison ajoutée ici */
+  margin-top: 5px;
+}
+
+.gg-attachment::after,
+.gg-attachment::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 4px;
+  border: 3px solid;
+}
+
+.gg-attachment::after {
+  border-bottom: 0;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  right: -3px;
+  width: 15px;
+  height: 20px;
+  bottom: 12px;
+}
+
+.gg-attachment::before {
+  width: 9px;
+  height: 18px;
+  border-top: 0;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  left: 3px;
+  bottom: 6px;
+}
+
+
+.gg-home {
+  background:
+      linear-gradient(to left,
+          currentColor 10px,transparent 0)
+          no-repeat 0 bottom/8px 4px,
+      linear-gradient(to left,
+          currentColor 10px,transparent 0)
+          no-repeat right bottom/8px 4px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 36px; /* Double de la taille précédente */
+  height: 28px; /* Double de la taille précédente */
+  border: 4px solid; /* Double de l'épaisseur précédente */
+  border-top: 0;
+  border-bottom: 0;
+  border-top-right-radius: 6px; /* Ajusté pour préserver la proportion */
+  border-top-left-radius: 6px; /* Ajusté pour préserver la proportion */
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: -4px; /* Ajusté pour préserver la proportion */
+}
+
+.gg-home::after,
+.gg-home::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-home::before {
+  border-top: 4px solid; /* Double de l'épaisseur précédente */
+  border-left: 4px solid; /* Double de l'épaisseur précédente */
+  border-top-left-radius: 8px; /* Ajusté pour préserver la proportion */
+  transform: rotate(45deg);
+  top: -10px; /* Ajusté pour préserver la proportion */
+  border-radius: 6px; /* Ajusté pour préserver la proportion */
+  width: 28px; /* Double de la taille précédente */
+  height: 28px; /* Double de la taille précédente */
+  left: 0px; /* Ajusté pour préserver la proportion */
+}
+
+.gg-home::after {
+  width: 16px; /* Double de la taille précédente */
+  height: 20px; /* Double de la taille précédente */
+  border: 4px solid; /* Double de l'épaisseur précédente */
+  border-radius: 200px; /* Ajusté pour préserver la proportion */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  left: 6px; /* Ajusté pour préserver la proportion */
+  bottom: 4px; /* Ajusté pour préserver la proportion */
+}
+
+.navecrire{
+  margin-right: 20px;
+  color: #ffffffb7;
+  font-style: normal;
+  font-size: small;
+}
+.gg--ereader {
+ 
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23000'%3E%3Cpath fill-rule='evenodd' d='M3 3v6h18V3zm16 2H5v2h14zM3 11v10h8V11zm6 2H5v6h4z' clip-rule='evenodd'/%3E%3Cpath d='M21 11h-8v2h8zm-8 4h8v2h-8zm8 4h-8v2h8z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 35px; 
+  height: 40px; 
+  border: 4px solid; 
+  border-top: 0;
+  border-bottom: 0;
+  border-top-right-radius: 6px; 
+  border-top-left-radius: 6px; 
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: -9px;
+  
+}
+.gg--ereader::after,
+.gg--ereader::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg--ereader::before {
+  border-top: 4px solid; 
+  border-left: 4px solid; 
+  border-top-left-radius: 8px; 
+  transform: rotate(45deg);
+  top: -10px; 
+  border-radius: 6px; 
+  width: 28px; 
+  height: 28px; 
+  left: 0px; 
+}
+
+.gg--ereader::after {
+  width: 16px; 
+  height: 20px; 
+  border: 4px solid; 
+  border-radius: 200px; 
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  left: 6px; 
+  margin-top: 20px;
+}

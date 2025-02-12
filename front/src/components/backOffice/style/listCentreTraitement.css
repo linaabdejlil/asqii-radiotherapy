@@ -1,0 +1,84 @@
+.containerSideMap {
+  background: #f8f9fdb3;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.893) 0%, rgba(244, 247, 251, 0.887) 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
+  left: 450px;
+  top: 130px;
+  width: 400px;
+  height: 700px;
+  margin-left: 270px;
+  margin-top: 150px;
+}
+.containerMap {
+  background: #f8f9fdb3;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.893) 0%, rgba(244, 247, 251, 0.887) 100%);
+  border-radius: 40px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
+  width: 1220px;
+  height: 700px;
+  margin-left: 0px;
+  margin-top: 150px;
+}
+
+.listeCentre{
+  color: #233368;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  margin-left: 30px;
+}
+.marker {
+  background-image: url('https://docs.mapbox.com/help/demos/custom-markers-gl-js/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.item {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.item:hover {
+  background-color: #e9ecef;
+}
+
+.item.active {
+  background-color: #007bff64;
+  color: white;
+}
+.listings{
+  margin-top: 40px;
+}
+.marker {
+  background-image: url('https://docs.mapbox.com/help/demos/custom-markers-gl-js/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+

@@ -1,0 +1,98 @@
+.detailsSeance {
+    height: 700px;
+    width: 1400px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  
+  
+  .detailsSeance .groupdetailsSeance {
+    height: 500px;
+    left: 0;
+    top: 0;
+    width: 1265px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: fixed;
+    width: 40%;
+  }
+  
+  .detailsSeance .overlapdetailsSeance {
+    background-size: 100% 100%;
+    height: 888px;
+    position: relative;
+    width: 1261px;
+  }
+  
+  .detailsSeance .nouveau-detailsSeance-wrapperdetailsSeance {
+    height: 51px;
+    left: 400px;
+    position: absolute;
+    top: 27px;
+    width: 545px;
+  }
+  
+  .detailsSeance .nouveau-detailsSeance {
+    color: #233368;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: -200px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 543px;
+  }
+  .detailsSeance  .dateSeance{
+    margin-left: 110px; 
+    margin-top: 100px; 
+    color: #233368;
+        font-family: "Montserrat-Bold" ,Helvetica;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: normal;
+        position: absolute;
+        white-space: nowrap ;
+        width: 76px;
+    }
+    .detailsSeance  .inputDateSeance{
+        margin-left: 280px; 
+        margin-top: 85px; 
+        background-color: #dcebfd;
+      border-color: #23336800;
+    
+      border-radius: 12px;
+      height: 45px;
+      position: absolute;
+      width: 200px;
+      padding: 10px;
+     }
+     .detailsSeance  .remarqueSeance{
+        margin-left: 110px; 
+        margin-top: 170px; 
+        color: #233368;
+            font-family: "Montserrat-Bold" ,Helvetica;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: normal;
+            position: absolute;
+            white-space: nowrap ;
+            width: 76px;
+        }
+        .detailsSeance  .inputRemarqueSeance{
+            margin-left: 200px; 
+            margin-top: 250px; 
+            background-color: #dcebfd;
+          border-color: #23336800;
+        
+          border-radius: 12px;
+          height: 120px;
+          position: absolute;
+          width: 360px;
+          padding: 10px;
+         }

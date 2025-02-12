@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+html,
+body  {
+  margin: auto;
+  font-family: "montserrat";
+  -webkit-font-smoothing: antialiased;
+  max-width: 1920px;
+  display: block;
+  user-select: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  padding: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #101d89;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+

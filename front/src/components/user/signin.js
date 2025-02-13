@@ -26,7 +26,7 @@ function Signin() {
     try {
       // Send sign-in request
       const response = await axios.post(
-        "http://localhost:4001/users/signin",
+        "users/signin",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );
@@ -53,7 +53,7 @@ function Signin() {
     try {
       // Envoyer une demande de réinitialisation de mot de passe
       await axios.post(
-        "http://localhost:4001/mdp/forgot-password",
+        "mdp/forgot-password",
         { email },
         { headers: { "Content-Type": "application/json" } }
       );

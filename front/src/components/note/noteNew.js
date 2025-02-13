@@ -48,7 +48,7 @@ function NoteNew({ report, setReport, userData, handleValueClick, refreshNotes }
       const token = localStorage.getItem("token"); // Assuming the token is stored in localStorage
 
       const response = await axios.post(
-        "http://localhost:4001/notes/create",
+        "notes/create",
         formData,
         {
           headers: {

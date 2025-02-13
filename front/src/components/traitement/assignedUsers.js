@@ -26,7 +26,7 @@ function AssignedUsers({ patientId }) {
     const fetchAssignedUsers = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/assigned-users/${patientId}`
+          `patients/assigned-users/${patientId}`
         );
         setAssignedUsers(response.data);
       } catch (error) {

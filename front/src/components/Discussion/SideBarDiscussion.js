@@ -33,7 +33,7 @@ const SideBarDiscussion = () => {
   const fetchUserProfile = async () => {
     try {
       const token = localStorage.getItem("token"); // Synchronous operation
-      const response = await axios.get("http://localhost:4001/users/profile", {
+      const response = await axios.get("users/profile", {
         headers: { Authorization: ` ${token}` },
       });
       setCurrentUser(response.data);

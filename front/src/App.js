@@ -44,12 +44,14 @@ import FileViewer from "./components/note/FileViewer";
 import Statistique from "./components/statistique/statistique";
 import Calendrier from "./components/calendrier";
 import Form from "./components/form";
+import axios from "axios";
 
 export const RecoveryContext = createContext();
 const formSchema = {
   type: "default",
   components: [],
 };
+axios.defaults.baseURL=process.env.REACT_APP_API_HOST
 
 function App() {
   const isLoggedIn = localStorage.getItem("token");

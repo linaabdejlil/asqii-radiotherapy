@@ -23,7 +23,7 @@ function ModifierPatient({ closeModal, patientId }) {
   useEffect(() => {
     const fetchPatientData = async () => {
       try {
-        const response = await axios.get(`http://localhost:4001/patients/${patientId}`);
+        const response = await axios.get(`patients/${patientId}`);
         const data = response.data;
 
         // Format date to yyyy-MM-dd
@@ -51,7 +51,7 @@ function ModifierPatient({ closeModal, patientId }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:4001/patients/updatePatient/${patientId}`, patientData);
+      await axios.put(`patients/updatePatient/${patientId}`, patientData);
       closeModal();
       window.location.reload(); // Refresh the page (or trigger a fetch if you prefer to update the UI without a reload)
 

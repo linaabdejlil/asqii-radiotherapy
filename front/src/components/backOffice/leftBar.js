@@ -41,7 +41,7 @@ const LeftBar = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.get("http://localhost:4001/notifications", {
+      const response = await axios.get("notifications", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

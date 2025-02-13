@@ -76,7 +76,7 @@ useEffect(() => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        `http://localhost:4001/messages/send/${selectedRecipientId}`,
+        `messages/send/${selectedRecipientId}`,
         { contenu: newMessage },
         { headers: { Authorization: ` ${token}` } }
       );
@@ -98,7 +98,7 @@ useEffect(() => {
   const fetchMessages = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:4001/messages/all?order_by=-createdAt', {
+      const response = await axios.get('messages/all?order_by=-createdAt', {
         headers: {
           Authorization: ` ${token}`,
         },
@@ -112,7 +112,7 @@ useEffect(() => {
   const handleRecipientClick = async (recipientId, recipientNom, recipientPrenom, recipientImage) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:4001/messages/get/${recipientId}`, {
+      const response = await axios.get(`messages/get/${recipientId}`, {
         headers: {
           Authorization: ` ${token}`,
         },

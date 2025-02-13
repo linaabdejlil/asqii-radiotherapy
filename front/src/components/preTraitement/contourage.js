@@ -21,7 +21,7 @@ function CONTOURAGE({ closeModal2, contourageId, traitementId }) {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -48,7 +48,7 @@ function CONTOURAGE({ closeModal2, contourageId, traitementId }) {
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -62,7 +62,7 @@ function CONTOURAGE({ closeModal2, contourageId, traitementId }) {
     const fetchContourageDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/contourages/${contourageId}`,
+          `contourages/${contourageId}`,
           {
             params: { include: "User" }, // Ajoutez ceci pour inclure les données de l'utilisateur
           }
@@ -92,7 +92,7 @@ function CONTOURAGE({ closeModal2, contourageId, traitementId }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        `http://localhost:4001/contourages/add/${traitementId}`,
+        `contourages/add/${traitementId}`,
         {
           date: newContourageDate,
           etat: true,

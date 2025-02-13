@@ -96,13 +96,13 @@ const Statistques = () => {
           dosimetrieStatusResponse,
           validationStatusResponse,
         ] = await Promise.all([
-          axios.get("http://localhost:4001/patients/total"),
-          axios.get("http://localhost:4001/patients/prescription-status-count"),
-          axios.get("http://localhost:4001/patients/scanner-status-count"),
-          axios.get("http://localhost:4001/patients/importation-status-count"),
-          axios.get("http://localhost:4001/patients/contourage-status-count"),
-          axios.get("http://localhost:4001/patients/dosimetrie-status-count"),
-          axios.get("http://localhost:4001/patients/validation-status-count"),
+          axios.get("patients/total"),
+          axios.get("patients/prescription-status-count"),
+          axios.get("patients/scanner-status-count"),
+          axios.get("patients/importation-status-count"),
+          axios.get("patients/contourage-status-count"),
+          axios.get("patients/dosimetrie-status-count"),
+          axios.get("patients/validation-status-count"),
         ]);
 
         const {
@@ -194,13 +194,13 @@ const Statistques = () => {
       try {
         // Fetch the total number of patients
         const totalPatientsResponse = await axios.get(
-          "http://localhost:4001/patients/total"
+          "patients/total"
         );
         const { totalPatients } = totalPatientsResponse.data;
 
         // Fetch the counts of waiting and completed patients for prescriptions
         const prescriptionStatusResponse = await axios.get(
-          "http://localhost:4001/patients/prescription-status-count"
+          "patients/prescription-status-count"
         );
         const {
           waitingCount: prescriptionWaitingCount,
@@ -209,7 +209,7 @@ const Statistques = () => {
 
         // Fetch the counts of waiting and completed patients for scanners
         const scannerStatusResponse = await axios.get(
-          "http://localhost:4001/patients/scanner-status-count"
+          "patients/scanner-status-count"
         );
         const {
           waitingCount: scannerWaitingCount,
@@ -218,7 +218,7 @@ const Statistques = () => {
 
         // Fetch the counts of waiting and completed patients for importations
         const importationStatusResponse = await axios.get(
-          "http://localhost:4001/patients/importation-status-count"
+          "patients/importation-status-count"
         );
         const {
           waitingCount: importationWaitingCount,
@@ -227,7 +227,7 @@ const Statistques = () => {
 
         // Fetch the counts of waiting and completed patients for contourages
         const contourageStatusResponse = await axios.get(
-          "http://localhost:4001/patients/contourage-status-count"
+          "patients/contourage-status-count"
         );
         const {
           waitingCount: contourageWaitingCount,
@@ -236,7 +236,7 @@ const Statistques = () => {
 
         // Fetch the counts of waiting and completed patients for dosimetries
         const dosimetrieStatusResponse = await axios.get(
-          "http://localhost:4001/patients/dosimetrie-status-count"
+          "patients/dosimetrie-status-count"
         );
         const {
           waitingCount: dosimetrieWaitingCount,
@@ -244,7 +244,7 @@ const Statistques = () => {
         } = dosimetrieStatusResponse.data;
  // Fetch the counts of waiting and completed patients for validation
  const validationStatusResponse = await axios.get(
-  "http://localhost:4001/patients/validation-status-count"
+  "patients/validation-status-count"
 );
 const {
   waitingCount: validationWaitingCount,
@@ -252,7 +252,7 @@ const {
 } = validationStatusResponse.data;
 // Fetch the counts of waiting and completed patients for qualite
 const qualiteStatusResponse = await axios.get(
-  "http://localhost:4001/patients/qualite-status-count"
+  "patients/qualite-status-count"
 );
 const {
   completedCount: qualiteCompletedCount,

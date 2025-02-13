@@ -46,7 +46,7 @@ function SignupUser({ closeModal }) {
       formData.append("image", newUserImage);
 
       const response = await axios.post(
-        `http://localhost:4001/users/signup`,
+        `users/signup`,
         formData,
         {
           headers: {

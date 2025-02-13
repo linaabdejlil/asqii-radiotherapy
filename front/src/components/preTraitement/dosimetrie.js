@@ -21,7 +21,7 @@ function DOSIMETRIE({ closeModal1, dosimetrieId, traitementId }) {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -48,7 +48,7 @@ function DOSIMETRIE({ closeModal1, dosimetrieId, traitementId }) {
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -61,7 +61,7 @@ function DOSIMETRIE({ closeModal1, dosimetrieId, traitementId }) {
     const fetchDosimetrieDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/dosimetries/${dosimetrieId}`,
+          `dosimetries/${dosimetrieId}`,
           {
             params: { include: "User" }, // Ajoutez ceci pour inclure les données de l'utilisateur
           }
@@ -89,7 +89,7 @@ function DOSIMETRIE({ closeModal1, dosimetrieId, traitementId }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        `http://localhost:4001/dosimetries/add/${traitementId}`,
+        `dosimetries/add/${traitementId}`,
         {
           date: newDosimetrieDate,
           etat: true,

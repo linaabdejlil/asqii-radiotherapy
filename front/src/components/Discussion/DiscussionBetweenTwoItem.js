@@ -40,7 +40,7 @@ const DiscussionBetweenTwoItem = () => {
     try {
       const token = await localStorage.getItem("token"); // Get the JWT token from local storage
 
-      const response = await axios.get("http://localhost:4001/users/profile", {
+      const response = await axios.get("users/profile", {
         headers: {
           Authorization: ` ${token}`, // Attach the token to the Authorization header
         },

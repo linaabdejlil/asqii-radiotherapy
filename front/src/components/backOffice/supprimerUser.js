@@ -22,7 +22,7 @@ function SupprimerUser({ closeModal, userId }) {
 
       // Sending a DELETE request to the backend to delete the user
       await axios.delete(
-        `http://localhost:4001/users/deleteUser/${userId}`,
+        `users/deleteUser/${userId}`,
         config
       );
 

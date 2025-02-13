@@ -188,7 +188,7 @@ function Scanner({
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -219,7 +219,7 @@ function Scanner({
         const token = localStorage.getItem("token"); // Récupérer le token JWT depuis le stockage local
 
         const response = await axios.get(
-          `http://localhost:4001/prescriptions/${prescriptionId}/${traitementId}`,
+          `prescriptions/${prescriptionId}/${traitementId}`,
           {
             headers: {
               Authorization: ` ${token}`, // Ajouter le token JWT à l'en-tête 'Authorization'
@@ -243,7 +243,7 @@ function Scanner({
       console.log("ppppp", patientId);
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/${patientId}`
+          `patients/${patientId}`
         );
         setPatient(response.data);
       } catch (error) {
@@ -258,7 +258,7 @@ function Scanner({
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -274,7 +274,7 @@ function Scanner({
 
       try {
         const response = await axios.get(
-          `http://localhost:4001/scanners/${scannerId}`,
+          `scanners/${scannerId}`,
           {
             params: { include: "User" }, // Ajoutez ceci pour inclure les données de l'utilisateur
           }
@@ -326,7 +326,7 @@ function Scanner({
       const updatedDocsString = updatedDocs.join("/");
 
       const response = await axios.post(
-        `http://localhost:4001/scanners/add/${traitementId}/${patientId}`,
+        `scanners/add/${traitementId}/${patientId}`,
         {
           date: newScannerDate,
           etat: true,

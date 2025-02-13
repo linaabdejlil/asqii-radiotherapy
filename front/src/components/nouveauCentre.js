@@ -19,7 +19,7 @@ function NouveauCentre({ closeModalNouveauCentre }) {
   const handleAddCentre = async () => {
     try {
       // Send a POST request to add a new patient
-      const response = await axios.post(`http://localhost:4001/centreTraitements/add`, {
+      const response = await axios.post(`centreTraitements/add`, {
         nom: newCentreNom,
         localisation: newCentreLocalisation,
         mail: newCentreMail,

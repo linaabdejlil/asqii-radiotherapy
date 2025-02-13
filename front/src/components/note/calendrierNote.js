@@ -21,7 +21,7 @@ function CalendrierNote() {
       try {
         const token = localStorage.getItem("token");
 
-        const response = await axios.get("http://localhost:4001/notes/all", {
+        const response = await axios.get("notes/all", {
           headers: {
             Authorization: `${token}`,
           },
@@ -51,7 +51,7 @@ function CalendrierNote() {
       const token = localStorage.getItem("token");
   
       // Fetch the note details by its ID
-      const response = await axios.get(`http://localhost:4001/notes/note/${event.id}`, {
+      const response = await axios.get(`notes/note/${event.id}`, {
         headers: {
           Authorization: `${token}`,
         },

@@ -112,7 +112,7 @@ function NouvelleNote({ closeModal }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:4001/notes/create",
+        "notes/create",
         formData,
         {
           headers: {

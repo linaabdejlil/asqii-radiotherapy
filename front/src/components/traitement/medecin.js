@@ -27,7 +27,7 @@ function Medecin({ closeModal1, patientId }) {
       // Assuming you have the token stored in localStorage or a similar place
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:4001/users/getSurgeonsRadiologists",
+        "users/getSurgeonsRadiologists",
         {
           headers: {
             Authorization: `Bearer ${token}`, // Include the authorization header
@@ -71,7 +71,7 @@ function Medecin({ closeModal1, patientId }) {
 
       // Envoyer une requête POST au localhost pour affecter les utilisateurs sélectionnés à un patient
       await axios.post(
-        `http://localhost:4001/patients/assign-users/${patientId}`,
+        `patients/assign-users/${patientId}`,
         {
           userIds: selectedUserIds,
         }

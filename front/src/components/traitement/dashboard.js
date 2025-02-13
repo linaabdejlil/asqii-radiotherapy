@@ -41,7 +41,7 @@ function Dashboard() {
   const searchByStartDate = useCallback(async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/patients/searchDDT/${startDate}`
+        `patients/searchDDT/${startDate}`
       );
       console.log("Patients data by start date from server:", response.data);
       setPatients(response.data);
@@ -54,7 +54,7 @@ function Dashboard() {
     setCentreTraitement(centreTraitementItem);
     try {
       const response = await axios.get(
-        `http://localhost:4001/patients/searchCT/${centreTraitementItem}`
+        `patients/searchCT/${centreTraitementItem}`
       );
       console.log(
         "Filtered Patients data by centre traitement:",
@@ -76,7 +76,7 @@ function Dashboard() {
     const searchByMachine = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/searchMachine/${nomMachine}`
+          `patients/searchMachine/${nomMachine}`
         );
         console.log("Filtered Patients data by machine:", response.data);
         setPatients(response.data);
@@ -100,7 +100,7 @@ function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:4001/patients/all");
+      const response = await axios.get("patients/all");
       console.log("Patients data from server:", response.data);
       setPatients(response.data);
     } catch (error) {
@@ -116,7 +116,7 @@ function Dashboard() {
     const fetchFilteredData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/search/${searchTerm}`
+          `patients/search/${searchTerm}`
         );
         console.log("Filtered Patients data from server:", response.data);
         setPatients(response.data);

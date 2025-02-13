@@ -44,7 +44,7 @@ function SignupAdmin({ closeModal }) {
       formData.append("tel", newAdminTel);
 
       const response = await axios.post(
-        "http://localhost:4001/users/signup",
+        "users/signup",
         formData
       );
 

@@ -59,7 +59,7 @@ function Calendrier() {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("http://localhost:4001/seances/getAll");
+      const response = await axios.get("seances/getAll");
       const seances = response.data.map((seance) => {
         const { randomHour, randomMinute } = getRandomTime();
         const startDate = new Date(seance.dateSeance);

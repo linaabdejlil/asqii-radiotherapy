@@ -16,7 +16,7 @@ function SupprimerPatient({ closeModal, patientId }) {
       console.log("ID du patient:", patientId);
 
       // Configure axios to send the delete request
-      await axios.delete(`http://localhost:4001/patients/deletePatient/${patientId}`, {
+      await axios.delete(`patients/deletePatient/${patientId}`, {
         headers: {
           Authorization: ` ${token}`,
         },

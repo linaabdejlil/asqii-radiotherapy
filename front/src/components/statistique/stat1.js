@@ -54,13 +54,13 @@ function Stat1() {
           dosimetrieStatusResponse,
           validationStatusResponse,
         ] = await Promise.all([
-          axios.get("http://localhost:4001/patients/total"),
-          axios.get("http://localhost:4001/patients/prescription-status-count"),
-          axios.get("http://localhost:4001/patients/scanner-status-count"),
-          axios.get("http://localhost:4001/patients/importation-status-count"),
-          axios.get("http://localhost:4001/patients/contourage-status-count"),
-          axios.get("http://localhost:4001/patients/dosimetrie-status-count"),
-          axios.get("http://localhost:4001/patients/validation-status-count"),
+          axios.get("patients/total"),
+          axios.get("patients/prescription-status-count"),
+          axios.get("patients/scanner-status-count"),
+          axios.get("patients/importation-status-count"),
+          axios.get("patients/contourage-status-count"),
+          axios.get("patients/dosimetrie-status-count"),
+          axios.get("patients/validation-status-count"),
         ]);
 
         const {

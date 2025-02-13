@@ -26,7 +26,7 @@ function DetailsPatient({ closeModal, patientId }) {
     try {
       // Récupérer les détails actualisés du patient depuis l'API
       const response = await axios.get(
-        `http://localhost:4001/patients/${patientId}`
+        `patients/${patientId}`
       );
       const updatedPatientData = response.data;
 
@@ -86,7 +86,7 @@ function DetailsPatient({ closeModal, patientId }) {
     const fetchAssignedUsers = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/assigned-users/${patientId}`
+          `patients/assigned-users/${patientId}`
         );
         setAssignedUsers(response.data);
       } catch (error) {
@@ -101,7 +101,7 @@ function DetailsPatient({ closeModal, patientId }) {
     const fetchDetailsPatient = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/${patientId}`
+          `patients/${patientId}`
         );
         setPatient(response.data);
       } catch (error) {
@@ -116,7 +116,7 @@ function DetailsPatient({ closeModal, patientId }) {
     const fetchTraitements = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/patient/${patientId}`
+          `traitements/patient/${patientId}`
         );
         setTraitements(response.data);
       } catch (error) {

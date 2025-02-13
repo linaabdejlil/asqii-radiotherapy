@@ -10,7 +10,7 @@ function NouveauTraitement({ closeModal, patientId, setTraitements }) {
   const handleAddTraitement = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:4001/traitements/add/${patientId}`,
+        `traitements/add/${patientId}`,
         {
           localisation: localisation,
           indication: indication,

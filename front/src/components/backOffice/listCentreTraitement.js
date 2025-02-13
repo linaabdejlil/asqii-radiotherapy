@@ -68,7 +68,7 @@ const ListCentreTraitement = () => {
     map.on("load", async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4001/centreTraitements/getAll"
+          "centreTraitements/getAll"
         );
         setCentresTraitement(response.data);
 

@@ -17,7 +17,7 @@ function DetailsTraitement({ traitementId }) {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -44,7 +44,7 @@ function DetailsTraitement({ traitementId }) {
   const fetchTraitementDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/traitements/one/${traitementId}`
+        `traitements/one/${traitementId}`
       );
       setTraitement(response.data);
     } catch (error) {
@@ -59,7 +59,7 @@ function DetailsTraitement({ traitementId }) {
     try {
       const token = localStorage.getItem("token"); // Récupérer le token JWT du stockage local
       const response = await axios.put(
-        `http://localhost:4001/traitements/update/${traitementId}`,
+        `traitements/update/${traitementId}`,
         {
           dateDebut: dateDebut,
           etalement: etalement,

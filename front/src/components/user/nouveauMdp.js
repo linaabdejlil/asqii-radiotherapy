@@ -16,7 +16,7 @@ function NouveauMdp({ closeModalNouveauMdp, closeModalMdp, code, email }) {
     try {
       console.log(code);
       await axios.post(
-        "http://localhost:4001/mdp/reset-password",
+        "mdp/reset-password",
         { email, code, newPassword },
         { headers: { "Content-Type": "application/json" } }
       );

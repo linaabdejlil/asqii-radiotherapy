@@ -24,7 +24,7 @@ function Patient({ closeModal1 }) {
   const handleAddPatient = async () => {
     try {
       // Send a POST request to add a new patient
-      const response = await axios.post(`http://localhost:4001/patients/add`, {
+      const response = await axios.post(`patients/add`, {
         nom: newPatientNom,
         prenom: newPatientPrenom,
         mail: newPatientMail,

@@ -19,7 +19,7 @@ function QUALITE({ closeModal, qualiteId, traitementId }) {
       try {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -46,7 +46,7 @@ function QUALITE({ closeModal, qualiteId, traitementId }) {
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -60,7 +60,7 @@ function QUALITE({ closeModal, qualiteId, traitementId }) {
     const fetchQualiteDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/qualites/${qualiteId}`,
+          `qualites/${qualiteId}`,
           {
             params: { include: "User" }, // Ajoutez ceci pour inclure les données de l'utilisateur
           }
@@ -89,7 +89,7 @@ function QUALITE({ closeModal, qualiteId, traitementId }) {
       }
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `http://localhost:4001/qualites/add/${traitementId}`,
+        `qualites/add/${traitementId}`,
         {
           date: newQualiteDate,
           etat: true,

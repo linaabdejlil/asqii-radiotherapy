@@ -90,7 +90,7 @@ function Calendrier({ traitementId }) {
         
         // Mise à jour côté serveur
         const response = await axios.put(
-          `http://localhost:4001/seances/reschedule/${selectedEvent.id}`,
+          `seances/reschedule/${selectedEvent.id}`,
           updatedData
         );
         console.log("Reschedule success:", response.data);
@@ -132,7 +132,7 @@ function Calendrier({ traitementId }) {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`,
@@ -157,7 +157,7 @@ function Calendrier({ traitementId }) {
   const fetchTraitementDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/traitements/one/${traitementId}`
+        `traitements/one/${traitementId}`
       );
       setTraitement(response.data);
       setNewTraitementDateDebut(response.data.dateDebut);
@@ -165,7 +165,7 @@ function Calendrier({ traitementId }) {
       setEvents(response.data.events);
 
       const seancesResponse = await axios.get(
-        `http://localhost:4001/seances/${traitementId}`
+        `seances/${traitementId}`
       );
       const seances = seancesResponse.data;
 
@@ -198,7 +198,7 @@ function Calendrier({ traitementId }) {
 
       try {
         const response = await axios.put(
-          `http://localhost:4001/seances/update/${selectedEvent.id}`,
+          `seances/update/${selectedEvent.id}`,
           updatedSeanceData
         );
         console.log("Update success:", response.data);

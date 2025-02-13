@@ -22,7 +22,7 @@ function IMPORTATION({ closeModal, importationId, traitementId, patientId }) {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: `${token}`,
@@ -45,7 +45,7 @@ function IMPORTATION({ closeModal, importationId, traitementId, patientId }) {
       console.log("ppppp", patientId);
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/${patientId}`
+          `patients/${patientId}`
         );
         setPatient(response.data);
       } catch (error) {
@@ -60,7 +60,7 @@ function IMPORTATION({ closeModal, importationId, traitementId, patientId }) {
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -74,7 +74,7 @@ function IMPORTATION({ closeModal, importationId, traitementId, patientId }) {
     const fetchImportationDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/importations/${importationId}`,
+          `importations/${importationId}`,
           {
             params: { include: "User" },
           }
@@ -100,7 +100,7 @@ function IMPORTATION({ closeModal, importationId, traitementId, patientId }) {
       }
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `http://localhost:4001/importations/add/${traitementId}`,
+        `importations/add/${traitementId}`,
         {
           date: newImportationDate,
           etat: true,

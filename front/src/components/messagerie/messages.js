@@ -18,7 +18,7 @@ const Messages = () => {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header

@@ -11,7 +11,7 @@ function ProtectedComponent() {
         // Récupérer le jeton JWT du stockage local
         const token = localStorage.getItem('token');
 
-        const response = await axios.get('http://localhost:4001/users/protected', {
+        const response = await axios.get('users/protected', {
           headers: {
             Authorization: ` ${token}`
           }

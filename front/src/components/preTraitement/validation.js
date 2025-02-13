@@ -21,7 +21,7 @@ function VALIDATION({ closeModal, validationId, traitementId }) {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -48,7 +48,7 @@ function VALIDATION({ closeModal, validationId, traitementId }) {
     const fetchDetailsTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/traitements/one/${traitementId}`
+          `traitements/one/${traitementId}`
         );
         setTraitement(response.data);
       } catch (error) {
@@ -62,7 +62,7 @@ function VALIDATION({ closeModal, validationId, traitementId }) {
     const fetchValidationDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/validations/${validationId}`,
+          `validations/${validationId}`,
           {
             params: { include: "User" }, // Ajoutez ceci pour inclure les données de l'utilisateur
           }
@@ -90,7 +90,7 @@ function VALIDATION({ closeModal, validationId, traitementId }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        `http://localhost:4001/validations/add/${traitementId}`,
+        `validations/add/${traitementId}`,
         {
           date: newValidationDate,
           etat: true,

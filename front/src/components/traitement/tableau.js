@@ -82,7 +82,7 @@ function Tableau() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:4001/users/protected",
+          "users/protected",
           {
             headers: {
               Authorization: ` ${token}`,
@@ -118,7 +118,7 @@ function Tableau() {
   const searchByStartDate = useCallback(async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/patients/searchDDT/${startDate}`
+        `patients/searchDDT/${startDate}`
       );
       console.log("Patients data by start date from server:", response.data);
       setPatients(response.data);
@@ -131,7 +131,7 @@ function Tableau() {
     const fetchAssignedUsers = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4001/patients/assigned-users/${selectedPatientId}`
+          `patients/assigned-users/${selectedPatientId}`
         );
         if (!response.ok) {
           throw new Error(
@@ -173,7 +173,7 @@ function Tableau() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:4001/patients/all");
+      const response = await axios.get("patients/all");
       console.log("Patients data from server:", response.data);
       setPatients(response.data);
     } catch (error) {
@@ -189,7 +189,7 @@ function Tableau() {
     const fetchFilteredData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/search/${searchTerm}`
+          `patients/search/${searchTerm}`
         );
         console.log("Filtered Patients data from server:", response.data);
         setPatients(response.data);
@@ -208,7 +208,7 @@ function Tableau() {
     const fetchFilteredDataDMI = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/searchDMI/${searchDMI}`
+          `patients/searchDMI/${searchDMI}`
         );
         console.log("Filtered Patients data from server:", response.data);
         setPatients(response.data);
@@ -227,7 +227,7 @@ function Tableau() {
     const searchByCentreTraitement = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/searchCT/${searchCentre}`
+          `patients/searchCT/${searchCentre}`
         );
         console.log("Filtered Patients data from server:", response.data);
         setPatients(response.data);
@@ -247,7 +247,7 @@ function Tableau() {
     const searchByMachine = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4001/patients/searchMachine/${searchMachine}`
+          `patients/searchMachine/${searchMachine}`
         );
         console.log("Filtered Patients data from server:", response.data);
         setPatients(response.data);

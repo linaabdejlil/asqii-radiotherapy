@@ -28,7 +28,7 @@ function Profile({}) {
         const token = localStorage.getItem("token"); // Get the JWT token from local storage
 
         const response = await axios.get(
-          "http://localhost:4001/users/profile",
+          "users/profile",
           {
             headers: {
               Authorization: ` ${token}`, // Attach the token to the Authorization header
@@ -66,7 +66,7 @@ function Profile({}) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:4001/users/update`,
+        `users/update`,
         {
           nom: loggedInUserNom,
           prenom: loggedInUserPrenom,

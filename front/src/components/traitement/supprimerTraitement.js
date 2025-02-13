@@ -12,7 +12,7 @@ function SupprimerTraitement({ closeModal, traitementId, setTraitements }) {
     try {
       // Envoyer une requête DELETE au backend pour supprimer le traitement
       await axios.delete(
-        `http://localhost:4001/traitements/delete/${traitementId}`
+        `traitements/delete/${traitementId}`
       );
 
       // Mettre à jour la liste des traitements dans le composant DetailsPatient
